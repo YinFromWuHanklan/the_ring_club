@@ -1,0 +1,74 @@
+/* general */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: #FFF;
+}
+
+.text_box {
+    padding: 40px;
+}
+
+
+/* Colors */
+/*
+.background_red {
+    background-color: rgb(231, 33, 77);
+}
+.background_blue {
+    background-color: rgb(2, 54, 210);
+}
+*/
+
+
+/* Images */
+
+/*
+.background_intro, 
+.background_training_1, 
+.background_training_2, 
+.background_vorteile, 
+.background_meister {
+    background-size: cover;
+    background-position: center center;
+}
+
+.background_intro {
+    background-image: url(../images/intro-marcus-hanke.jpg);
+}
+
+.background_training_1 {
+    background-image: url(../images/kbm-training-1.jpg);
+}
+
+.background_training_2 {
+    background-image: url(../images/kbm-training-2.jpg);
+}
+
+.background_vorteile {
+    background-image: url(../images/intro-marcus-hanke.jpg);
+}
+
+.background_meister {
+    background-image: url(../images/der-meister-marcus-hanke.jpg);
+}
+*/
+
+
+/* Specials */
+
+/*
+.bg_opacity_wrapper {
+    background-color: rgba(2, 54, 210, 0.7);
+}
+*/
