@@ -15,6 +15,26 @@ p {
     color: #FFF;
 }
 
+h1,
+h2 {
+    margin-top: 40px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+
+
+/* Stundenplan */
+
+td {
+    padding: 15px 25px;
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+
+
 .text_box {
     padding: 40px;
 }
