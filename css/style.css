@@ -18,10 +18,16 @@ p {
 h1,
 h2 {
     margin-top: 40px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+
 }
 
 p {
     margin-top: 20px;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
 }
 
 
