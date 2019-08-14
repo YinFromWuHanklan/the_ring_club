@@ -27,6 +27,17 @@
             <?php include("components/header.html"); ?>
 
             <h1>Preise</h1>
+            <table class="table table-bordered table-dark mt-5">
+                <tr>
+                    <td>12 Monate Laufzeit</td>
+                    <td>149,00€ monatl.</td>
+                </tr>
+                <tr>
+                    <td>6 Monate Laufzeit</td>
+                    <td>189,00€ monatl.</td>
+                </tr>
+            </table>
+            <p>Aufnahmegebühr 150,00€</p>
             
         </div>
         <div class="col-md-2">

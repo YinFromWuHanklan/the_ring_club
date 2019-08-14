@@ -25,16 +25,14 @@
         <div class="m-5 col-md-8">
 
             <?php include("components/header.html"); ?>
-            
+
             <h1>Kontakt</h1>
             <p>The Ring Club</p>
             <p>
-                Adresse:<br />
-                Musterstraße 1<br />
-                12345 Musterstadt
+                München-Pasing
             </p>
             <p>
-                Telefon: 089/123456789<br />
+                <!-- Telefon: 089/123456789<br /> -->
                 Email: <a href="mailto:info@thering-muc.de">info@thering-muc.de</a>
             </p>
         </div>
