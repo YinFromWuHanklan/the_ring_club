@@ -18,24 +18,30 @@
 
 <?php include("components/navbar.html"); ?>
 
+    <div class="row">
+        <div class="col-md-2">
+            
+        </div>
+        <div class="m-5 col-md-8">
 
-    <!-- Header -->
-    <img src="images/header.jpg" alt="The Ring" width="1200" class="img-fluid" />
-
-
-    <div class="m-5">
-        <h1>Kontakt</h1>
-        <p>The Ring Club</p>
-        <p>
-            Adresse:<br />
-            Musterstraße 1<br />
-            12345 Musterstadt
-        </p>
-        <p>
-            Telefon: 089/123456789<br />
-            Email: <a href="mailto:info@thering-muc.de">info@thering-muc.de</a>
-        </p>
-    </div>
+            <?php include("components/header.html"); ?>
+            
+            <h1>Kontakt</h1>
+            <p>The Ring Club</p>
+            <p>
+                Adresse:<br />
+                Musterstraße 1<br />
+                12345 Musterstadt
+            </p>
+            <p>
+                Telefon: 089/123456789<br />
+                Email: <a href="mailto:info@thering-muc.de">info@thering-muc.de</a>
+            </p>
+        </div>
+        <div class="col-md-2">
+            
+        </div>
+    </div>    
 
 
 

@@ -18,15 +18,21 @@
 
 <?php include("components/navbar.html"); ?>
 
+    <div class="row">
+        <div class="col-md-2">
+            
+        </div>
+        <div class="m-5 col-md-8">
 
-    <!-- Header -->
-    <img src="images/header.jpg" alt="The Ring" width="1200" class="img-fluid" />
+            <?php include("components/header.html"); ?>
+            
+            <h1>Impressum</h1>
 
-
-    <div class="m-5">
-        <h1>Impressum</h1>
-
-    </div>
+        </div>
+        <div class="col-md-2">
+            
+        </div>
+    </div>    
 
 
 
