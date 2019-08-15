@@ -12,11 +12,15 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:300,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,700&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
 </head>
 
 <body>
 
 <?php include("components/navbar.html"); ?>
+
+<?php include("components/header.html"); ?>
 
 
 
@@ -26,28 +30,32 @@
         </div>
         <div class="m-5 col-md-8">
 
-            <?php include("components/header.html"); ?>
-            
             <h1>The Ring Club</h1>
-            <p>
-                Unsere Intension ist es eine Trainingsstätte für Boxen und Athletik Training zur Verfügung zu stellen die
-                keine
-                Wünsche offen lässt in Hinblick auf Ausstattung, Trainer und Ambiente.
-            </p>
-            <p>
-                Wir wollen Menschen ab 30 Jahren ansprechen die sich in den bestehenden Studios oder Clubs nicht sehen, sei
-                es
-                auf Grund der sehr durchwachsenen Mitgliederstruktur derer oder dem fehlenden Spaß- und Leistungsfaktor der
-                diversen Angebote.
-            </p>
-            <p>
-                Unsere Mitglieder sind Menschen die sich eine gewisse Position im bisherigen Leben erarbeitet haben und
-                neben
-                der hohen Qualität auch den Erfolg suchen in sportlicher Hinsicht. Sei es um ein Ventil für den Alltag zu
-                haben,
-                kleine Insuffizienzen der Muskulatur ( Schmerzen ) zu beheben oder ein höheres Maß an Leistungsfähigkeit zu
-                erreichen gepaart mit einer optischen Veränderung des eigenen Körpers.
-            </p>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <p>
+                        Unsere Intension ist es eine Trainingsstätte für Boxen und Athletik Training zur Verfügung zu stellen die
+                        keine
+                        Wünsche offen lässt in Hinblick auf Ausstattung, Trainer und Ambiente.
+                    </p>
+                    <p>
+                        Wir wollen Menschen ab 30 Jahren ansprechen die sich in den bestehenden Studios oder Clubs nicht sehen, sei
+                        es
+                        auf Grund der sehr durchwachsenen Mitgliederstruktur derer oder dem fehlenden Spaß- und Leistungsfaktor der
+                        diversen Angebote.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        Unsere Mitglieder sind Menschen die sich eine gewisse Position im bisherigen Leben erarbeitet haben und
+                        neben
+                        der hohen Qualität auch den Erfolg suchen in sportlicher Hinsicht. Sei es um ein Ventil für den Alltag zu
+                        haben,
+                        kleine Insuffizienzen der Muskulatur ( Schmerzen ) zu beheben oder ein höheres Maß an Leistungsfähigkeit zu
+                        erreichen gepaart mit einer optischen Veränderung des eigenen Körpers.
+                    </p>
+                </div>
+            </div>
 
             <h2>
                 Trainingsphilosophie
