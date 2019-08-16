@@ -18,8 +18,6 @@
 
 <body>
 
-<?php include("components/navbar.html"); ?>
-
     <div class="row">
         <div class="col-md-2">
             
@@ -28,24 +26,25 @@
 
             <?php include("components/header.html"); ?>
 
-            <h1>Preise</h1>
+            <h1>The Ring Boxing Club Opening</h1>
             <table class="table table-bordered table-dark mt-5">
                 <tr>
-                    <td>12 Monate Laufzeit</td>
-                    <td>149,- € mtl.</td>
+                    <td>12 Monate</td>
+                    <td>119,- € mtl.</td>
                 </tr>
                 <tr>
                     <td>6 Monate Laufzeit</td>
-                    <td>189,- € mtl.</td>
+                    <td>139,- € mtl.</td>
                 </tr>
             </table>
-            <p>Aufnahmegebühr 150,- €</p>
-            
+            <p>
+                100,- € Aufnahmegebühr
+            </p>
         </div>
         <div class="col-md-2">
             
         </div>
-    </div>
+    </div>    
 
 
 

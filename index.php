@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:300,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,700&display=swap" rel="stylesheet">
     <!-- Scripts -->
-    <script src="scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
         </div>
         <div class="m-5 col-md-8">
 
-            <h1>The Ring Club</h1>
+            <h1>The Ring Boxing Club Munich</h1>
             <div class="row mt-4">
                 <div class="col-md-6">
                     <p>
@@ -93,6 +93,7 @@
             <p>
                 Selbstverständlich wir dieser Betrag bei Abschluss einer Mitgliedschaft verrechnet!
             </p>
+            <a href="http://www.theringclub.yin-fit.de/opening" role="button" class="btn btn-outline-info">Probetraining buchen</a>
         </div>
         <div class="col-md-2">
             
