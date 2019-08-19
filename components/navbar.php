@@ -12,7 +12,7 @@
             <?php
             foreach(array(
                 'index.php' => 'Home',
-                'boxgym.php' => 'Boxgym',
+                'studio.php' => 'Studio',
                 'kursplan.php' => 'Kursplan',
                 'preise.php' => 'Preise',
                 'probetraining.php' => 'Probetraining',

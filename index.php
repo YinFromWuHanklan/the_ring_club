@@ -2,10 +2,9 @@
 <html>
 
 <head>
-    <title>The Ring Club</title>
+    <title>The Ring Boxing Club Munich</title>
+    <meta name="description" content="The Ring Boxing Club Munich">
     <?php fetch_file('head.html') ?>
-    <!-- Scripts -->
-    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -13,8 +12,6 @@
 <?php fetch_file("navbar.php"); ?>
 
 <?php include("components/header.html"); ?>
-
-
 
     <div class="row">
         <div class="col-md-2">
