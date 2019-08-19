@@ -80,9 +80,9 @@
                 entschlossen für das Probetraining 25.- Euro zu verlangen.
             </p>
             <p>
-                Selbstverständlich wir dieser Betrag bei Abschluss einer Mitgliedschaft verrechnet!
+                Selbstverständlich wird dieser Betrag bei Abschluss einer Mitgliedschaft verrechnet!
             </p>
-            <a href="http://www.theringclub.yin-fit.de/opening" role="button" class="btn btn-outline-info">Probetraining buchen</a>
+            <a href="opening.php" role="button" class="btn btn-outline-info">Probetraining buchen</a>
         </div>
         <div class="col-md-2">
             

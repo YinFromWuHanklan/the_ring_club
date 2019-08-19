@@ -31,6 +31,21 @@
             <p>
                 100,- € Aufnahmegebühr
             </p>
+            <form class="mt-5">
+                <div class="form-group">
+                    <label for="openingName" class="text-white">Name</label>
+                    <input type="text" class="form-control" id="openingName" name="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="openingPhone" class="text-white">Telefonnummer</label>
+                    <input type="text" class="form-control" id="openingPhone" name="phone" placeholder="Telefonnummer">     
+                </div>
+                <div class="form-group">
+                    <label for="openingEmail" class="text-white">Email</label>
+                    <input type="text" class="form-control" id="openingEmail" name="email" placeholder="Email">
+                </div>
+                <button type="submit" class="btn btn-outline-info">Probetraining jetzt buchen</button>
+            </form>
         </div>
         <div class="col-md-2">
             
