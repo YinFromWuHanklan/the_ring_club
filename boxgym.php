@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php include 'library/init.php'; ?><!DOCTYPE html>
 <html>
 
 <head>
@@ -18,7 +18,7 @@
 
 <body>
 
-<?php include("components/navbar.html"); ?>
+<?php fetch_file("navbar.php"); ?>
 
     <div class="row">
         <div class="col-md-2">
