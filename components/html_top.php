@@ -11,7 +11,16 @@ if (!isset($website_description)) {
     <head>
         <title><?= $website_title ?></title>
         <meta name="description" content="<?= $website_description ?>">
-        <?php fetch_file('head.html') ?>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style<?= IS_LIVE ? '.min' : '' ?>.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:300,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,700&display=swap" rel="stylesheet">
     </head>
     <body>
         <?php fetch_file("navbar.php"); ?>

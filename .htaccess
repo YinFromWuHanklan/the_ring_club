@@ -1,0 +1,24 @@
+RewriteEngine On
+RewriteRule ^datenschutz.html datenschutz.php [L]
+RewriteRule ^impressum.html impressum.php [L]
+RewriteRule ^kontakt.html kontakt.php [L]
+RewriteRule ^kursplan.html kursplan.php [L]
+RewriteRule ^opening.html opening.php [L]
+RewriteRule ^preise.html preise.php [L]
+RewriteRule ^probetraining.html probetraining.php [L]
+RewriteRule ^studio.html studio.php [L]
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/atom_xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/x-shockwave-flash
+</IfModule>
