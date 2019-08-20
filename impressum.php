@@ -1,39 +1,21 @@
-<?php include 'library/init.php'; ?><!DOCTYPE html>
-<html>
+<?php
+$website_title = 'Impressum';
+$website_description = 'Impressum';
+include 'components/html_top.php';
+?>
 
-<head>
-    <title>Impressum</title>
-    <meta name="description" content="Impressum">
-    <?php fetch_file('head.html') ?>
-</head>
+<div class="row">
+    <div class="col-md-2">
 
-<body>
+    </div>
+    <div class="m-5 col-md-8">
 
-<?php fetch_file("navbar.php"); ?>
+        <h1>Impressum</h1>
 
-<?php include("components/header.html"); ?>
+    </div>
+    <div class="col-md-2">
 
-    <div class="row">
-        <div class="col-md-2">
-            
-        </div>
-        <div class="m-5 col-md-8">
+    </div>
+</div>    
 
-            <h1>Impressum</h1>
-
-        </div>
-        <div class="col-md-2">
-            
-        </div>
-    </div>    
-
-
-
-
-    <?php include("components/footer.html"); ?>
-
-    <?php include("components/bootstrap_scripts.html"); ?>
-
-</body>
-
-</html>
+<?php include("components/html_bottom.php"); ?>

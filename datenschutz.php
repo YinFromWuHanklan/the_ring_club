@@ -1,40 +1,22 @@
-<?php include 'library/init.php'; ?><!DOCTYPE html>
-<html>
-
-<head>
-    <title>Datenschutz</title>
-    <meta name="description" content="Datenschutz">
-    <?php fetch_file('head.html') ?>
-</head>
-
-<body>
-
-<?php fetch_file("navbar.php"); ?>
-
-<?php include("components/header.html"); ?>
+<?php
+$website_title = 'Datenschutz';
+$website_description = 'Datenschutz';
+include 'components/html_top.php';
+?>
 
 
-    <div class="row">
-        <div class="col-md-2">
-            
-        </div>
-        <div class="m-5 col-md-8">
+<div class="row">
+    <div class="col-md-2">
 
-            <h1>Datenschutz</h1>
-        
-        </div>
-        <div class="col-md-2">
-            
-        </div>
-    </div>    
+    </div>
+    <div class="m-5 col-md-8">
 
+        <h1>Datenschutz</h1>
 
-    
+    </div>
+    <div class="col-md-2">
 
-    <?php include("components/footer.html"); ?>
+    </div>
+</div>    
 
-    <?php include("components/bootstrap_scripts.html"); ?>
-
-</body>
-
-</html>
+<?php include("components/html_bottom.php"); ?>

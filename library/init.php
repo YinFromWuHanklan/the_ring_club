@@ -7,3 +7,6 @@ define('DIR_BACKEND', ROOT . '_backend/');
 define('DIR_BACKEND_CLASSES', DIR_BACKEND . 'classes/');
 
 include DIR_LIB . 'functions.php';
+
+//Kickstart Backend.
+include DIR_BACKEND . 'init.php';
