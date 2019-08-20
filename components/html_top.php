@@ -17,7 +17,7 @@ if (!isset($website_description)) {
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style<?= IS_LIVE ? '.min' : '' ?>.css">
+        <link rel="stylesheet" href="assets/css/style<?= IS_LIVE ? '.min' : '' ?>.css">
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:300,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Merriweather:300,700&display=swap" rel="stylesheet">
