@@ -18,6 +18,10 @@
         <div class="m-5 col-md-8">
 
             <h1>The Ring Boxing Club Opening</h1>
+
+            <p id="countdownOpening" class="text-white text-center mt-5 p-3"></p>
+
+            <h2>Eröffnungspreise</h2>
             <table class="table table-bordered table-dark mt-5">
                 <tr>
                     <td>12 Monate</td>
@@ -31,6 +35,8 @@
             <p>
                 100,- € Aufnahmegebühr
             </p>
+
+            <h2>Anmeldung</h2>
             <form class="mt-5">
                 <div class="form-group">
                     <label for="openingName" class="text-white">Name</label>
@@ -56,6 +62,27 @@
 
 
     <?php include("components/footer.html"); ?>
+
+    <script>
+    var countDownDate = new Date("Oct 1, 2019 10:00:00").getTime();
+
+    
+    var x = setInterval(function() {
+
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdownOpening").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+    }, 1000);
+    </script>
 
     <?php include("components/bootstrap_scripts.html"); ?>
 
