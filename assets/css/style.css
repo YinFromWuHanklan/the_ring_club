@@ -1,0 +1,90 @@
+/* general */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+}
+h1,
+h2,
+h3,
+p {
+  color: #FFF;
+}
+h1,
+h2 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h1 {
+  margin-top: 60px;
+  text-align: center;
+}
+h2 {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 1px solid grey;
+}
+p {
+  margin-top: 20px;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+}
+/* Stundenplan */
+td {
+  padding: 15px 25px;
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+.text_box {
+  padding: 40px;
+}
+/* Colors */
+/*
+.background_red {
+    background-color: rgb(231, 33, 77);
+}
+.background_blue {
+    background-color: rgb(2, 54, 210);
+}
+*/
+/* Images */
+/*
+.background_intro, 
+.background_training_1, 
+.background_training_2, 
+.background_vorteile, 
+.background_meister {
+    background-size: cover;
+    background-position: center center;
+}
+
+.background_intro {
+    background-image: url(../images/intro-marcus-hanke.jpg);
+}
+
+.background_training_1 {
+    background-image: url(../images/kbm-training-1.jpg);
+}
+
+.background_training_2 {
+    background-image: url(../images/kbm-training-2.jpg);
+}
+
+.background_vorteile {
+    background-image: url(../images/intro-marcus-hanke.jpg);
+}
+
+.background_meister {
+    background-image: url(../images/der-meister-marcus-hanke.jpg);
+}
+*/
+/* Specials */
+/*
+.bg_opacity_wrapper {
+    background-color: rgba(2, 54, 210, 0.7);
+}
+*/
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBR0E7RUFDSSx1QkFBQTs7QUFHSjtFQUNJLHVCQUFBOztBQUdKO0FBQ0E7QUFDQTtBQUNBO0VBQ0ksV0FBQTs7QUFHSjtBQUNBO0VBQ0ksYUFBYSw0QkFBYjtFQUNBLGdCQUFBO0VBQ0EseUJBQUE7O0FBSUo7RUFDSSxnQkFBQTtFQUNBLGtCQUFBOztBQUdKO0VBQ0ksZ0JBQUE7RUFDQSxpQkFBQTtFQUNBLDBCQUFBOztBQUdKO0VBQ0ksZ0JBQUE7RUFDQSxhQUFhLHFCQUFiO0VBQ0EsZ0JBQUE7OztBQU9KO0VBQ0ksa0JBQUE7RUFDQSxXQUFBO0VBQ0Esc0JBQUE7O0FBSUo7RUFDSSxhQUFBIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbXX0= */
