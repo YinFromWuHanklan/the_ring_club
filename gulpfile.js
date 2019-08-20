@@ -99,16 +99,17 @@ gulp.task('js', function () {
 });
 //
 gulp.task('css-min', function () {
-    return gulp.src('./assets/css/styles.css')
-            .pipe(concat('styles.min.css'))
+    return gulp.src('./assets/css/style.css')
+            .pipe(concat('style.min.css'))
             .pipe(minifyCSS())
             .pipe(gulp.dest('./assets/css/'));
 });
 gulp.task('js-min', function () {
-    return gulp.src('./assets/js/*.js')
+    return gulp.src('./assets/js/script.js')
+            .pipe(concat('script.min.js'))
             .pipe(jsmin())
             .pipe(uglify())
-            .pipe(gulp.dest('./assets/js/min/'));
+            .pipe(gulp.dest('./assets/js/'));
 });
 gulp.task('clean', function () {
     return gulp.src('./assets/*', {read: false}).pipe(clean());
