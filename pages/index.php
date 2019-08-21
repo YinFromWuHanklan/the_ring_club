@@ -73,7 +73,7 @@ include '../components/html_top.php';
         <p>
             Selbstverständlich wird dieser Betrag bei Abschluss einer Mitgliedschaft verrechnet!
         </p>
-        <a href="opening.php" role="button" class="btn btn-outline-info">Probetraining buchen</a>
+        <a href="opening.html" role="button" class="btn btn-outline-info">Probetraining buchen</a>
     </div>
     <div class="col-md-2">
 
