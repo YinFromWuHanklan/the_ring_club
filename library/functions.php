@@ -1,6 +1,6 @@
 <?php
 function fetch_file($filename) {
-    foreach(array('', 'components/', 'library/') as $folder) {
+    foreach(array('', ROOT, ROOT . 'components/', DIR_LIB) as $folder) {
         if(is_file($folder . $filename)) {
             include $folder . $filename;
             return true;

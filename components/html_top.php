@@ -1,5 +1,10 @@
 <?php
-include 'library/init.php';
+if (is_file('library/init.php')) {
+    include 'library/init.php';
+} else if (is_file('../library/init.php')) {
+    include '../library/init.php';
+}
+
 if (!isset($website_title)) {
     $website_title = 'The Ring Boxing Club Munich';
 }

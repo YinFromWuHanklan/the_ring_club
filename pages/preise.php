@@ -1,7 +1,7 @@
 <?php
 $website_title = 'Preise';
 $website_description = 'Preise';
-include 'components/html_top.php';
+include '../components/html_top.php';
 ?>
 
 <div class="row">
@@ -29,4 +29,4 @@ include 'components/html_top.php';
     </div>
 </div>
 
-<?php include("components/html_bottom.php"); ?>
+<?php include ROOT . "components/html_bottom.php"; ?>

@@ -1,7 +1,7 @@
 <?php
 $website_title = 'Neueröffnung the Ring Boxing Club';
 $website_description = 'Neueröffnung the Ring Boxing Club';
-include 'components/html_top.php';
+include '../components/html_top.php';
 ?>
 
 <div class="row">
@@ -99,4 +99,4 @@ include 'components/html_top.php';
     }, 1000);
 </script>
 
-<?php include("components/html_bottom.php"); ?>
+<?php include ROOT . "components/html_bottom.php"; ?>
