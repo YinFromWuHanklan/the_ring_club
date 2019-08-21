@@ -1,12 +1,12 @@
 RewriteEngine On
-RewriteRule ^datenschutz.html datenschutz.php [L]
-RewriteRule ^impressum.html impressum.php [L]
-RewriteRule ^kontakt.html kontakt.php [L]
-RewriteRule ^kursplan.html kursplan.php [L]
-RewriteRule ^opening.html opening.php [L]
-RewriteRule ^preise.html preise.php [L]
-RewriteRule ^probetraining.html probetraining.php [L]
-RewriteRule ^studio.html studio.php [L]
+RewriteRule ^datenschutz.html pages/datenschutz.php [L]
+RewriteRule ^impressum.html pages/impressum.php [L]
+RewriteRule ^kontakt.html pages/kontakt.php [L]
+RewriteRule ^kursplan.html pages/kursplan.php [L]
+RewriteRule ^opening.html pages/opening.php [L]
+RewriteRule ^preise.html pages/preise.php [L]
+RewriteRule ^probetraining.html pages/probetraining.php [L]
+RewriteRule ^studio.html pages/studio.php [L]
 
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/plain
