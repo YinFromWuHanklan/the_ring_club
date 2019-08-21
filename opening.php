@@ -15,6 +15,33 @@ include 'components/html_top.php';
         <p id="countdownOpening" class="text-white text-center mt-5 p-3"></p>
 
         <h2>Eröffnungspreise</h2>
+        <div class="card mb-6 shadow-sm">
+            <div class="card-header">
+                <p>
+                    12 Monate
+                </p>
+            </div>
+            <div class="card-body">
+                <div class="card-title pricing-card-title">
+                    €119,-
+                    <small class="text-muted"></small>/ mtl.
+                </div>
+            </div>
+        </div>
+        <div class="card mb-6 shadow-sm">
+            <div class="card-header">
+                <p>
+                    6 Monate
+                </p>
+            </div>
+            <div class="card-body">
+                <div class="card-title pricing-card-title">
+                    €139,-
+                    <small class="text-muted"></small>/ mtl.
+                </div>
+            </div>            
+        </div>
+
         <table class="table table-bordered table-dark mt-5">
             <tr>
                 <td>12 Monate</td>
