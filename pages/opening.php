@@ -15,45 +15,37 @@ include '../components/html_top.php';
         <p id="countdownOpening" class="text-white text-center mt-5 p-3"></p>
 
         <h2>Eröffnungspreise</h2>
-        <div class="card mb-6 shadow-sm">
-            <div class="card-header">
-                <p>
-                    12 Monate
-                </p>
-            </div>
-            <div class="card-body">
-                <div class="card-title pricing-card-title">
-                    €119,-
-                    <small class="text-muted"></small>/ mtl.
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="card bg-dark m-3 text-white">
+                    <div class="card-header text-center">
+                        12 Monate
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="card-title pricing-card-title">
+                            €119,-
+                            <small class="text-muted">/ mtl.</small>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card mb-6 shadow-sm">
-            <div class="card-header">
-                <p>
-                    6 Monate
-                </p>
-            </div>
-            <div class="card-body">
-                <div class="card-title pricing-card-title">
-                    €139,-
-                    <small class="text-muted"></small>/ mtl.
+            <div class="col-md-6">
+                <div class="card bg-dark m-3 text-white">
+                    <div class="card-header text-center">
+                        6 Monate
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="card-title pricing-card-title">
+                            €139,-
+                            <small class="text-muted">/ mtl.</small>
+                        </div>
+                    </div>            
                 </div>
-            </div>            
+            </div>
         </div>
 
-        <table class="table table-bordered table-dark mt-5">
-            <tr>
-                <td>12 Monate</td>
-                <td>119,- € mtl.</td>
-            </tr>
-            <tr>
-                <td>6 Monate Laufzeit</td>
-                <td>139,- € mtl.</td>
-            </tr>
-        </table>
         <p>
-            100,- € Aufnahmegebühr
+            zzgl. einmalig 100,- € Aufnahmegebühr
         </p>
 
         <h2>Anmeldung</h2>

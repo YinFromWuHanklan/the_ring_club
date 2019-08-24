@@ -11,12 +11,12 @@
         <ul class="navbar-nav ml-auto">
             <?php
             foreach(array(
-                'index.html' => 'Home',
-                'studio.html' => 'Studio',
-                'kursplan.html' => 'Kursplan',
-                'preise.html' => 'Preise',
-                'probetraining.html' => 'Probetraining',
-                'kontakt.html' => 'Kontakt',
+                'index.php' => 'Home',
+                'studio.php' => 'Studio',
+                'kursplan.php' => 'Kursplan',
+                'preise.php' => 'Preise',
+                'probetraining.php' => 'Probetraining',
+                'kontakt.php' => 'Kontakt',
             ) as $link_href => $link_text) {
                 $is_active = false;
                 if(strstr($_SERVER['REQUEST_URI'], $link_href)) {
