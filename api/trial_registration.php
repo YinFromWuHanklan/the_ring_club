@@ -1,8 +1,11 @@
 <?php
 
-debug(microtime());
-debug(microtime(true));
+include '../library/init.php';
 
-if(App::check_spam()) {
-    
-}
+App::check_spam();
+
+$data = array(
+    'name' => Utilities::validate($_POST['name']),
+    'phone' => Utilities::validate($_POST['phone']),
+    'email' => Utilities::validate($_POST['email']),
+);

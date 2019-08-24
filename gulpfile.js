@@ -6,6 +6,9 @@ var config = {
         'less/elements/*.less'
     ],
     js: [
+        'js/third_party/jquery-3.3.1.slim.min.js',
+        'js/third_party/bootstrap.min.js',
+        'js/third_party/popper.min.js',
         'js/project.js'
     ]
 };
