@@ -10,7 +10,7 @@ include '../components/html_top.php';
     </div>
     <div class="m-5 col-md-8">
 
-        <h1>Stundenplan</h1>
+        <h1>Kursplan</h1>
         <table class="table table-bordered table-dark table-responsive mt-5">
             <thead>
                 <tr>
