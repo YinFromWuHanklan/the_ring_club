@@ -1,12 +1,12 @@
 setTimeout(function () {
     $(function () {
-        setTimeout(project_init, 20);
+        setTimeout(project_init, 5);
     });
-}, 50);
+}, 5);
 //
 function project_init() {
 
-    setTimeout(opening_countdown, 10);
+    setTimeout(opening_countdown, 1);
 
 }
 
@@ -14,8 +14,11 @@ function opening_countdown() {
     var selector = '#countdownOpening';
     if ($("#countdownOpening").length) {
         var countDownDate = new Date("Oct 1, 2019 10:00:00").getTime();
-        setInterval(function () {
-
+        
+        setInterval(_create_countdown_time, 1000);
+        _create_countdown_time();
+        
+        function _create_countdown_time() {
             var now = new Date().getTime();
 
             var distance = countDownDate - now;
@@ -26,7 +29,6 @@ function opening_countdown() {
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             $("#countdownOpening").text(days + "d " + hours + "h " + minutes + "m " + seconds + "s");
-
-        }, 1000);
+        }
     }
 }

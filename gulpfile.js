@@ -82,6 +82,9 @@ gulp.task('images', function () {
             ])).pipe(gulp.dest('./assets/images/'));
 });
 gulp.task('less', function () {
+    //
+    gulp.src('less/third_party/bootstrap.min.css').pipe(gulp.dest('./assets/css/'));
+    //
     return gulp.src(config.css)
             .pipe(concat('style.css'))
             .pipe(sourcemaps.init())
