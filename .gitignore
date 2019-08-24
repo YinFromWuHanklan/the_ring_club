@@ -1,3 +1,9 @@
+#Project:
+/_xjsondb/
+/_backend/_xjsondb/
+
+
+
 # Logs
 logs
 *.log

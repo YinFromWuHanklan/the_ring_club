@@ -1,5 +1,12 @@
 <?php
 
+
+ini_set('short_open_tag', 1);
+ini_set('magic_quotes_gpc', 1);
+ini_set("memory_limit", "512M");
+
+@session_start();
+
 //Define Constants
 define('DIR_LIB', str_replace('\\', '/', __DIR__) . '/');
 define('ROOT', str_Replace('library/', '', DIR_LIB));
