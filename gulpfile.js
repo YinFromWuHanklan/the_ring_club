@@ -6,9 +6,14 @@ var config = {
         'less/elements/*.less'
     ],
     js: [
-        'js/third_party/jquery-3.3.1.slim.min.js',
+        'js/jquery/jquery.js',
+        'js/jquery/jquery-xtreme.js',
+        'js/jquery/jquery-ui.js',
+        'js/jquery/jquery-touch-punch.js',
         'js/third_party/bootstrap.min.js',
         'js/third_party/popper.min.js',
+        'js/_ajax_forms.js',
+        'js/opening.js',
         'js/project.js'
     ]
 };
