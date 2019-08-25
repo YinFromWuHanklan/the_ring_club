@@ -11,7 +11,10 @@ include '../components/html_top.php';
     <div class="m-5 col-md-8">
 
         <h1>Studio</h1>
-
+        <img src="assets/images/the-ring-location.jpg" alt="The Ring Boxing Club Studio" class="img-fluid mt-3" />
+        <p class="text-center">
+            coming soon.
+        </p>
     </div>
     <div class="col-md-2">
 
