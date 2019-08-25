@@ -49,7 +49,7 @@ include '../components/html_top.php';
         </p>
 
         <h2>Anmeldung</h2>
-        <form class="mt-5" data-ajax-form="api/trial_registration.php"
+        <form class="mt-5 p-3 rounded" data-ajax-form="api/trial_registration.php"
               data-ajax-form-success="opening_form_ajax_success" data-ajax-form-error="opening_form_ajax_error">
             <div class="form-group">
                 <label for="openingName" class="text-white">Name</label>
