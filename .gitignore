@@ -9,6 +9,7 @@ logs
 *.log
 
 # Runtime data
+AppData/
 pids
 *.pid
 *.seed
