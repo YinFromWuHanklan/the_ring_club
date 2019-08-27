@@ -3,6 +3,9 @@ RewriteEngine On
 RewriteRule (assets.*) $1 [L]
 RewriteRule (.*)\.html pages/$1.php [QSA,L]
 
+##AdminArea
+RewriteRule admin.* _backend/init_admin.php [QSA,L]
+
 ##For security, safe all obvious files
 RewriteRule (.gitignore|README.md|gulpfile.js|package-lock.json|package.json) - [R=404,L]
 #RewriteRule .* pages/error.php [L]

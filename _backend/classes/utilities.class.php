@@ -51,8 +51,8 @@ class Utilities {
         while (ob_get_level() > 1) {
             ob_end_clean();
         }
-        Response::header('Location: ' . $url, $status);
-        Response::header('Refresh:0; url=' . $url);
+        header('Location: ' . $url, $status);
+        header('Refresh:0; url=' . $url);
         die();
     }
 
