@@ -17,7 +17,7 @@ function ajax_form(form) {
         $form.submit(function (e) {
             e.preventDefault();
             console.log('form submitted', $form, target);
-            $.postJSON(target, $form.serialize(), function (response) {
+            $.postJSON(target, form_inputs($form), function (response) {
                 if (response.ok) {
                     window[success](response.response);
                 } else {
@@ -27,6 +27,20 @@ function ajax_form(form) {
             return false;
         });
     }
+}
+
+function form_inputs($form) {
+    return $form.serialize();
+    //
+    var inputs = {};
+    if ($form && $form.length) {
+        $form.find('input, select, textarea').each(function () {
+            if ($(this).attr('name') && $(this).attr('value')) {
+                inputs[$(this).attr('name')] = $.trim($(this).attr('value'));
+            }
+        });
+    }
+    return inputs;
 }
 
 window.startup_functions.push(function () {
