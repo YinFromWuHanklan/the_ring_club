@@ -28,4 +28,11 @@ function opening_form_ajax_success(response) {
 
 function opening_form_ajax_error(errors) {
     console.log('error', errors);
+    var error_text = '';
+    $(errors).each(function() {
+        var input_name = this[0];
+        var error_text = this[1];
+        
+        console.log(this);
+    });
 }
