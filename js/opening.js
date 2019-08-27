@@ -22,17 +22,21 @@ function opening_countdown() {
     }
 }
 
-function opening_form_ajax_success(response) {
-    console.log('success', response);
+function opening_form_ajax_success(response, $form) {
+    $form.html('<div class="alert-success">' + response + '</div>');
 }
 
-function opening_form_ajax_error(errors) {
-    console.log('error', errors);
-    var error_text = '';
-    $(errors).each(function() {
-        var input_name = this[0];
-        var error_text = this[1];
-        
-        console.log(this);
+function opening_form_ajax_error(errors, $form) {
+    var error_text, error_texts = [];
+    $(errors).each(function () {
+        if (this.length >= 2) {
+            var input_name = this[0];
+            error_texts.push(this[1]);
+            $form.find('[name="' + input_name + '"]').addClass('alert-danger').on('change click', function () {
+                $(this).removeClass('alert-danger');
+            });
+        }
     });
+    error_text = error_texts.join("\n");
+    alert(error_text);
 }

@@ -16,12 +16,11 @@ function ajax_form(form) {
         var error = $form.data('ajax-form-error');
         $form.submit(function (e) {
             e.preventDefault();
-            console.log('form submitted', $form, target);
             $.postJSON(target, form_inputs($form), function (response) {
                 if (response.ok) {
-                    window[success](response.response);
+                    window[success](response.response, $form);
                 } else {
-                    window[error](response.errors);
+                    window[error](response.errors, $form);
                 }
             });
             return false;
