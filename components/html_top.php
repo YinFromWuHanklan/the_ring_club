@@ -26,6 +26,8 @@ if (!isset($website_description)) {
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:300,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Merriweather:300,700&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/3ee0779e23.js"></script>
     </head>
     <body>
         <?php fetch_file("navbar.php"); ?>
