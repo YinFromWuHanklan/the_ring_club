@@ -53,15 +53,15 @@ include '../components/html_top.php';
               data-ajax-form-success="opening_form_ajax_success" data-ajax-form-error="opening_form_ajax_error">
             <div class="form-group">
                 <label for="openingName" class="text-white">Name</label>
-                <input type="text" class="form-control" name="opening[name]" placeholder="Name">
+                <input type="text" class="form-control" name="name" placeholder="Name">
             </div>
             <div class="form-group">
                 <label for="openingPhone" class="text-white">Telefonnummer</label>
-                <input type="text" class="form-control" name="opening[phone]" placeholder="Telefonnummer">     
+                <input type="text" class="form-control" name="phone" placeholder="Telefonnummer">     
             </div>
             <div class="form-group">
                 <label for="openingEmail" class="text-white">Email</label>
-                <input type="text" class="form-control" name="opening[email]" placeholder="Email">
+                <input type="text" class="form-control" name="email" placeholder="Email">
             </div>
             <button type="submit" class="btn btn-outline-info">Probetraining jetzt buchen</button>
         </form>

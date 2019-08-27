@@ -21,8 +21,7 @@ $XDB->add_tables(array(
             $email = (isset($data['email']) ? $data['email'] : 'no-email');
             return strtoupper(md5($data['id'] . '||' . $email));
         },
-        'email' => '',
-        'email_validated' => null,
+        'email' => ''
     ),
 ));
 
