@@ -8,7 +8,7 @@ include '../components/html_top.php';
     <div class="col-md-2">
 
     </div>
-    <div class="m-5 col-md-8">
+    <div class="col-md-8">
 
         <h1>The Ring Boxing Club Munich</h1>
         <div class="row mt-4">
@@ -36,32 +36,44 @@ include '../components/html_top.php';
                 </p>
             </div>
         </div>
+    </div>
+    <div class="col-md-2">
 
+    </div> 
+</div>
+<div class="row index_background">
+    <div class="col-md-2">
+
+    </div> 
+    <div class="col-md-8">
         <h2>
             Trainingsphilosophie
         </h2>
         <p>
-            Wir bieten im Boxen als auch im Athletik Training verschiedene Trainingsstunden an damit wir eine adäquate
-            Auslastung des jeweiligen Leistungsvermögens ohne Unter- oder Überforderung gewährleisten können.
+            Wir bieten im Boxen als auch im Athletik Training verschiedene Trainingsstunden an damit wir eine adäquate Auslastung des jeweiligen Leistungsvermögens ohne Unter- oder Überforderung gewährleisten können.
         </p>
         <p>
-            Anfängerstunden trainieren die Motorik, Balance und sollen neben der sportlichen Belastung die Wahrnehmung
-            des eigenen Körpers sensibilisieren. Ferner werden die Bewegungsabläufe für das jeweilige Anforderungsprofil
-            ( Boxen oder Athletik ) geschult um langfristig gesund und ohne Verschleiß trainieren zu können.
+            Anfängerstunden trainieren die Motorik, Balance und sollen neben der sportlichen Belastung die Wahrnehmung des eigenen Körpers sensibilisieren. Ferner werden die Bewegungsabläufe für das jeweilige Anforderungsprofil ( Boxen oder Athletik ) geschult um langfristig gesund und ohne Verschleiß trainieren zu können.
         </p>
         <p>
-            Bei den Fortgeschritteneren erhöht sich neben der muskulären Belastung auch die Anforderung an die
-            Reaktionszeiten des Körpers unter Bewegung (komplexere Bewegungsabläufe) als auch das „umschalten“ von Kraft
-            auf Balance um die Konzentrationsfähigkeit zu erhöhen.
+            Bei den Fortgeschritteneren erhöht sich neben der muskulären Belastung auch die Anforderung an die Reaktionszeiten des Körpers unter Bewegung (komplexere Bewegungsabläufe) als auch das „umschalten“ von Kraft auf Balance um die Konzentrationsfähigkeit zu erhöhen.
         </p>
         <p>
-            Beim Boxen legen wir auf ein sportliches und respektvolles Miteinander Wert um uns gegenseitig zu fordern
-            ohne Blessuren oder Verletzungen zu erhalten. Dies gilt unabhängig von Geschlecht oder Leistungsstand.
+            Beim Boxen legen wir auf ein sportliches und respektvolles Miteinander Wert um uns gegenseitig zu fordern  ohne Blessuren oder Verletzungen zu erhalten. Dies gilt unabhängig von Geschlecht oder Leistungsstand.
         </p>
         <p>
             Mit Beständigkeit und Vernunft einen fitteren und gesunden Körper zu aufzubauen oder zu erhalten.
         </p>
+    </div>
+    <div class="col-md-2">
 
+    </div> 
+</div>
+<div class="row">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8">
         <h2>
             Probetraining
         </h2>

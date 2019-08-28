@@ -11,6 +11,10 @@ include '../components/html_top.php';
     <div class="m-5 col-md-8">
 
         <h1>Preise</h1>
+        <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        </p>
         <div class="row mt-5">
             <div class="col-md-6">
                 <div class="card bg-dark m-3 text-white">
