@@ -12,6 +12,7 @@ define('DIR_LIB', str_replace('\\', '/', __DIR__) . '/');
 define('ROOT', str_Replace('library/', '', DIR_LIB));
 define('DIR_BACKEND', ROOT . '_backend/');
 define('DIR_BACKEND_CLASSES', DIR_BACKEND . 'classes/');
+define('DIR_BACKEND_PAGES', DIR_BACKEND . 'adminpages/');
 
 if (isset($_ENV['environment'])) {
     define('ENV', strtolower($_ENV['environment']));

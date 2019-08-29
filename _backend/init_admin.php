@@ -10,3 +10,7 @@ if(!is_string(Admin::$path) || empty(Admin::$path)) {
     Utilities::redirect('admin/login');
 }
 
+
+$admin_content = Admin::$page_File->get_content();
+
+echo $admin_content;

@@ -213,7 +213,7 @@ class File {
 
     public static function _create_try_list($filename, $extensions = array(), $prepathes = false) {
         $list = array();
-        $base_pathes = array(PROJECT_ROOT, ROOT);
+        $base_pathes = array(ROOT, DIR_BACKEND);
         if (!in_array('', $extensions)) {
             array_push($extensions, '');
         }

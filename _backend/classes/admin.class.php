@@ -3,6 +3,7 @@
 class Admin {
 
     public static $path = null;
+    public static $page_File = null;
 
     public static function init() {
         $url_path_explode = explode('/admin', $_SERVER['REQUEST_URI']);
@@ -15,6 +16,16 @@ class Admin {
             $path_after_admin = '';
         }
         self::$path = trim($path_after_admin);
+        //
+        $page_filepath = null;
+        if (is_file(DIR_BACKEND_PAGES . self::$path)) {
+            $page_filepath = DIR_BACKEND_PAGES . self::$path;
+        } else if (DIR_BACKEND_PAGES . self::$path . '.php') {
+            $page_filepath = DIR_BACKEND_PAGES . self::$path . '.php';
+        } else if (DIR_BACKEND_PAGES . self::$path . '.html') {
+            $page_filepath = DIR_BACKEND_PAGES . self::$path . '.html';
+        }
+        self::$page_File = File::instance($page_filepath);
     }
 
 }
