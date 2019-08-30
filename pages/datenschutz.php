@@ -1,6 +1,6 @@
 <?php
-$website_title = 'Datenschutz';
-$website_description = 'Datenschutz';
+$website_title = 'Datenschutz | The Ring Boxing Club';
+$website_description = 'Datenschutz | The Ring Boxing Club';
 include '../components/html_top.php';
 ?>
 

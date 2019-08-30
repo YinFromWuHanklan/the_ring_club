@@ -1,6 +1,6 @@
 <?php
-$website_title = 'Impressum';
-$website_description = 'Impressum';
+$website_title = 'Impressum | The Ring Boxing Club';
+$website_description = 'Impressum | The Ring Boxing Club';
 include '../components/html_top.php';
 ?>
 

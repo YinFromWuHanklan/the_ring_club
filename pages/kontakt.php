@@ -1,6 +1,6 @@
 <?php
-$website_title = 'Kontakt';
-$website_description = 'Kontakt';
+$website_title = 'Kontakt | The Ring Boxing Club';
+$website_description = 'Kontakt | The Ring Boxing Club';
 include '../components/html_top.php';
 ?>
 

@@ -1,6 +1,6 @@
 <?php
-$website_title = 'Probetraining';
-$website_description = 'Probetraining';
+$website_title = 'Probetraining | The Ring Boxing Club';
+$website_description = 'Probetraining | The Ring Boxing Club';
 include '../components/html_top.php';
 ?>
 
