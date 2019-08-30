@@ -1,7 +1,7 @@
 <?php
 $website_title = 'Neueröffnung the Ring Boxing Club';
 $website_description = 'Neueröffnung the Ring Boxing Club';
-include '../components/html_top.php';
+include '../components/html_top_no_header.php';
 ?>
 
 <div class="row">
@@ -9,7 +9,7 @@ include '../components/html_top.php';
 
     </div>
     <div class="m-5 col-md-8">
-
+        <img src="assets/images/thering-logo-white.png" alt="The Ring" width="400" class="img-fluid mx-auto d-block" />
         <h1>The Ring Boxing Club Opening</h1>
 
         <p id="countdownOpening" class="text-white text-center mt-5 p-3"></p>
