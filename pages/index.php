@@ -8,7 +8,7 @@ include '../components/html_top.php';
     <div class="col-md-2">
 
     </div>
-    <div class="col-md-8">
+    <div class="mx-5 col-md-8">
 
         <h1>The Ring Boxing Club Munich</h1>
         <div class="row mt-4">
@@ -41,11 +41,11 @@ include '../components/html_top.php';
 
     </div> 
 </div>
-<div class="row index_background">
+<div class="row">
     <div class="col-md-2">
 
     </div> 
-    <div class="col-md-8">
+    <div class="mx-5 col-md-8">
         <h2 class="text-center">Trainingsphilosophie</h2>
         <div class="row mt-4">
             <div class="col-md-6">
@@ -77,7 +77,7 @@ include '../components/html_top.php';
     <div class="col-md-2">
 
     </div>
-    <div class="col-md-8">
+    <div class="mx-5 col-md-8">
         <h2 class="text-center">
             Probetraining
         </h2>

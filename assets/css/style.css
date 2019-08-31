@@ -36,11 +36,8 @@ p {
 a {
   color: #FF8301;
 }
-.navbar {
-  background-color: transparent;
-}
 form {
-  background-color: #343a40;
+  background-color: #1C1915;
 }
 /* Stundenplan */
 td {
@@ -73,51 +70,5 @@ td {
   background-size: cover;
   background-position: center center;
 }
-/* Colors */
-/*
-.background_red {
-    background-color: rgb(231, 33, 77);
-}
-.background_blue {
-    background-color: rgb(2, 54, 210);
-}
-*/
-/* Images */
-/*
-.background_intro, 
-.background_training_1, 
-.background_training_2, 
-.background_vorteile, 
-.background_meister {
-    background-size: cover;
-    background-position: center center;
-}
 
-.background_intro {
-    background-image: url(../images/intro-marcus-hanke.jpg);
-}
-
-.background_training_1 {
-    background-image: url(../images/kbm-training-1.jpg);
-}
-
-.background_training_2 {
-    background-image: url(../images/kbm-training-2.jpg);
-}
-
-.background_vorteile {
-    background-image: url(../images/intro-marcus-hanke.jpg);
-}
-
-.background_meister {
-    background-image: url(../images/der-meister-marcus-hanke.jpg);
-}
-*/
-/* Specials */
-/*
-.bg_opacity_wrapper {
-    background-color: rgba(2, 54, 210, 0.7);
-}
-*/
-
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBR0E7RUFDSSx1QkFBQTs7QUFHSjtFQUNJLHVCQUFBOztBQUdKO0FBQ0E7QUFDQTtFQUNJLFdBQUE7O0FBR0o7RUFDSSxjQUFBOztBQUdKO0FBQ0E7RUFDSSxhQUFhLDRCQUFiO0VBQ0EsZ0JBQUE7RUFDQSx5QkFBQTs7QUFJSjtFQUNJLGdCQUFBO0VBQ0Esa0JBQUE7O0FBR0o7RUFDSSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsMEJBQUE7O0FBR0o7RUFDSSxnQkFBQTtFQUNBLGFBQWEscUJBQWI7RUFDQSxnQkFBQTs7QUFHSjtFQUNJLGNBQUE7O0FBR0o7RUFDSSw2QkFBQTs7QUFHSjtFQUNJLHlCQUFBOzs7QUFNSjtFQUNJLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLHNCQUFBOztBQUlKO0VBQ0ksYUFBQTs7O0FBSUo7RUFDSSx5QkFBQTs7O0FBSUo7RUFDSSxhQUFhLDRCQUFiO0VBQ0EsZ0JBQUE7RUFDQSxnQkFBQTs7QUFHSjtFQUNJLGlCQUFBO0VBQ0EsaURBQUE7O0FBR0osVUFDSTtFQUNJLGVBQUE7O0FBSVI7RUFDSSxzREFBQTtFQUNBLHNCQUFBO0VBQ0Esa0NBQUEiLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOltdfQ== */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBSUE7RUFDSSx1QkFBQTs7QUFHSjtFQUNJLHVCQUFBOztBQUdKO0FBQ0E7QUFDQTtFQUNJLFdBQUE7O0FBR0o7RUFDSSxjQUFBOztBQUdKO0FBQ0E7RUFDSSxhQUFhLDRCQUFiO0VBQ0EsZ0JBQUE7RUFDQSx5QkFBQTs7QUFJSjtFQUNJLGdCQUFBO0VBQ0Esa0JBQUE7O0FBR0o7RUFDSSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsMEJBQUE7O0FBR0o7RUFDSSxnQkFBQTtFQUNBLGFBQWEscUJBQWI7RUFDQSxnQkFBQTs7QUFHSjtFQUNJLGNBQUE7O0FBR0o7RUFDSSx5QkFBQTs7O0FBTUo7RUFDSSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxzQkFBQTs7QUFJSjtFQUNJLGFBQUE7OztBQUlKO0VBQ0kseUJBQUE7OztBQUlKO0VBQ0ksYUFBYSw0QkFBYjtFQUNBLGdCQUFBO0VBQ0EsZ0JBQUE7O0FBR0o7RUFDSSxpQkFBQTtFQUNBLGlEQUFBOztBQUdKLFVBQ0k7RUFDSSxlQUFBOztBQUlSO0VBQ0ksc0RBQUE7RUFDQSxzQkFBQTtFQUNBLGtDQUFBIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbXX0= */
