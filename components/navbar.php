@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <!-- <a class="navbar-brand" href="http://www.theringclub.yin-fit.de">
-        <img src="images/logo-navbar.png" alt="The Ring" width="90" />
-    </a> -->
+    <a class="navbar-brand" href="index.html">
+        <img src="images/thering-logo-navbar.png" alt="The Ring" width="90" />
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -11,7 +11,6 @@
         <ul class="navbar-nav ml-auto">
             <?php
             foreach(array(
-                'index.html' => 'Home',
                 'studio.html' => 'Studio',
                 'kursplan.html' => 'Kursplan',
                 'preise.html' => 'Preise',
