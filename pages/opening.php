@@ -14,7 +14,7 @@ include '../components/html_top_no_header.php';
 
         <p id="countdownOpening" class="text-white text-center mt-5 p-3"></p>
 
-        <h2>Eröffnungspreise</h2>
+        <h2 class="text-center">Eröffnungspreise</h2>
         <div class="row mt-5">
             <div class="col-md-6">
                 <div class="card bg-dark m-3 text-white">
@@ -48,7 +48,7 @@ include '../components/html_top_no_header.php';
             zzgl. einmalig 100,- € Aufnahmegebühr
         </p>
 
-        <h2>Anmeldung</h2>
+        <h2 class="text-center">Anmeldung</h2>
         <form class="mt-5 p-3 rounded" data-ajax-form="api/trial_registration.php"
               data-ajax-form-success="opening_form_ajax_success" data-ajax-form-error="opening_form_ajax_error">
             <div class="form-group">
@@ -63,7 +63,9 @@ include '../components/html_top_no_header.php';
                 <label for="openingEmail" class="text-white">Email</label>
                 <input type="text" class="form-control" name="email" placeholder="Email">
             </div>
-            <button type="submit" class="btn btn-outline-info">Probetraining jetzt buchen</button>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn p-3">Probetraining jetzt buchen</button>
+            </div>
         </form>
     </div>
     <div class="col-md-2">

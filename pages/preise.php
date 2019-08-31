@@ -26,7 +26,7 @@ include '../components/html_top.php';
                             €149,-
                             <small class="text-muted">/ mtl.</small>
                         </div>
-                        <a href="opening.html" role="button" class="btn btn-outline-info mt-3">Probetraining buchen</a>
+                        <a href="opening.html" role="button" class="btn mt-3 p-3">Probetraining buchen</a>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@ include '../components/html_top.php';
                             €189,-
                             <small class="text-muted">/ mtl.</small>
                         </div>
-                        <a href="opening.html" role="button" class="btn btn-outline-info mt-3">Probetraining buchen</a>
+                        <a href="opening.html" role="button" class="btn mt-3 p-3">Probetraining buchen</a>
                     </div>            
                 </div>
             </div>

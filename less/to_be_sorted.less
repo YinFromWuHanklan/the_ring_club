@@ -14,10 +14,6 @@ h3 {
     color: #FFF;
 }
 
-p {
-    color: #C9C9C9;
-}
-
 h1,
 h2 {    
     font-family: 'PT Sans Narrow', sans-serif;
@@ -41,6 +37,7 @@ p {
     margin-top: 20px;
     font-family: 'Merriweather', serif;
     font-weight: 300;
+    color: #C9C9C9;
 }
 
 a {
@@ -51,6 +48,28 @@ form {
     background-color: @secondary_color;
 }
 
+button.btn,
+a.btn {
+    color: @primary_color;
+    border: 1px solid @primary_color;
+}
+
+button:hover,
+a.btn:hover {
+    color: #FFF!important;
+    background-color: @primary_color;
+}
+
+/* Navbar */
+.navbar {
+    background-color: @secondary_color;
+}
+.nav-link {
+    color: #C9C9C9!important;
+}
+.nav-link:hover {
+    color: @primary_color!important;
+}
 
 /* Stundenplan */
 
@@ -75,6 +94,10 @@ td {
     font-family: 'PT Sans Narrow', sans-serif;
     font-weight: 700;
     font-size: 2.4em;
+}
+
+.card {
+    background-color: @secondary_color!important;
 }
 
 .card-header {
