@@ -1,8 +1,11 @@
 <?php
 if(isset($_POST['password'])) {
     if($_POST['password'] == 'trc' . date('d')) {
-        debug('Password correct.');
+        $_SESSION['trc']['login'] = true;
     }
+}
+if(Admin::is_logged_in()) {
+    Utilities::redirect('index');
 }
 ?>
 <form action="" method="post">

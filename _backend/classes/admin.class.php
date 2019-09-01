@@ -27,5 +27,9 @@ class Admin {
         }
         self::$page_File = File::instance($page_filepath);
     }
+    
+    public static function is_logged_in() {
+        return isset($_SESSION['trc']['login']) && $_SESSION['trc']['login'];
+    }
 
 }

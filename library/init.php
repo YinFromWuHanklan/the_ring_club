@@ -6,6 +6,9 @@ ini_set('magic_quotes_gpc', 1);
 ini_set("memory_limit", "512M");
 
 @session_start();
+if(!isset($_SESSION['trc'])) {
+    $_SESSION['trc'] = array();
+}
 
 //Define Constants
 define('DIR_LIB', str_replace('\\', '/', __DIR__) . '/');
