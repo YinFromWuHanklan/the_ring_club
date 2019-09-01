@@ -8,7 +8,7 @@ include '../components/html_top_no_header.php';
     <div class="col-md-2">
 
     </div>
-    <div class="m-5 col-md-8">
+    <div class="my-5 col-md-8">
         <img src="assets/images/thering-logo-white.png" alt="The Ring" width="400" class="img-fluid mx-auto d-block" />
         <h1>The Ring Boxing Club Opening</h1>
 
