@@ -9,14 +9,6 @@ $response = array(
     'response' => '',
     'errors' => array(),
 );
-$input = file_get_contents('php://input');
-if(substr($input, 0, 1) == '"') {
-    $input = substr($input, 1);
-}
-if(substr($input, strlen($input) - 2) == '"') {
-    $input = substr($input, 0, strlen($input));
-}
-parse_str($input, $_PAYLOAD);
 $data = array(
     'name' => _var('name', $_PAYLOAD),
     'phone' => _var('phone', $_PAYLOAD),
@@ -32,6 +24,9 @@ if(!is_string($data['phone']) || strlen($data['phone']) < 2) {
 }
 if(!is_string($data['email']) || strlen($data['email']) < 5 || !strstr($data['email'], '@')) {
     array_push($response['errors'], array('email', 'Bitte tragen Sie eine richtige E-Mail ein.'));
+}
+if(!Xcaptcha::check_if_safe()) {
+    array_push($response['errors'], array('captcha', 'Bitte tragen erfüllen Sie das Captcha.'));
 }
 
 if(empty($response['errors'])) {
