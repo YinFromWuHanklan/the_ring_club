@@ -18,6 +18,9 @@ function project_init() {
             }
         }
     }, 100);
+    
+    
+    setTimeout(start_xcaptcha, 100);
 
 }
 

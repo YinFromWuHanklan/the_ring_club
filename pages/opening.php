@@ -63,6 +63,7 @@ include '../components/html_top.php';
                 <label for="openingEmail" class="text-white">Email</label>
                 <input type="text" class="form-control" name="email" placeholder="Email">
             </div>
+            <div class="xcaptcha" data-xcaptcha></div>
             <button type="submit" class="btn btn-outline-info">Probetraining jetzt buchen</button>
         </form>
     </div>

@@ -3,6 +3,7 @@ var config = {
     css: [
         'less/variables.less',
         'less/to_be_sorted.less',
+        'less/_xtreme_captcha.less',
         'less/elements/*.less'
     ],
     js: [
@@ -13,6 +14,7 @@ var config = {
         'js/third_party/bootstrap.min.js',
         'js/third_party/popper.min.js',
         'js/_ajax_forms.js',
+        'js/_xtreme_captcha.js',
         'js/opening.js',
         'js/project.js'
     ]
