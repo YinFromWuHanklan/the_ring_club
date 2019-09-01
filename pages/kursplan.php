@@ -8,7 +8,7 @@ include '../components/html_top.php';
     <div class="col-md-2">
 
     </div>
-    <div class="m-5 col-md-8">
+    <div class="my-5 col-md-8">
 
         <h1>Kursplan</h1>
         <table class="table table-bordered table-dark table-responsive mt-5">
