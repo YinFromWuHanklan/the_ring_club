@@ -4,6 +4,12 @@ include DIR_BACKEND_CLASSES . 'app.class.php';
 include DIR_BACKEND_CLASSES . 'file.class.php';
 include DIR_BACKEND_CLASSES . 'utilities.class.php';
 include DIR_BACKEND_CLASSES . 'validate.class.php';
+include DIR_BACKEND_CLASSES . 'curl.class.php';
+include DIR_BACKEND_CLASSES . 'xcaptcha.class.php';
+
+//
+
+define('BASEURL', '');
 
 
 //################### Taken from XPM #########################
@@ -50,4 +56,23 @@ function _var($key, $var = null) {
     } else {
         return null;
     }
+}
+
+//Create $_PAYLOAD
+
+$input = file_get_contents('php://input');
+if (!empty($input)) {
+    if (substr($input, 0, 1) == '"') {
+        $input = substr($input, 1);
+    }
+    if (substr($input, strlen($input) - 2) == '"') {
+        $input = substr($input, 0, strlen($input));
+    }
+    if(strstr($input, '{') && strstr($input, '}')) {
+        $_PAYLOAD = json_decode($input, true);
+    } else {
+        parse_str($input, $_PAYLOAD);
+    }
+} else {
+    $_PAYLOAD = array();
 }

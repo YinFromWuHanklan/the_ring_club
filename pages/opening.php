@@ -63,6 +63,7 @@ include '../components/html_top_no_header.php';
                 <label for="openingEmail" class="text-white">Email</label>
                 <input type="text" class="form-control" name="email" placeholder="Email">
             </div>
+            <div class="xcaptcha" data-xcaptcha></div>
             <div class="text-center mt-4">
                 <button type="submit" class="btn p-3">Probetraining jetzt buchen</button>
             </div>

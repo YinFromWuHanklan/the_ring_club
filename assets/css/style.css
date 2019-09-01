@@ -91,5 +91,149 @@ td {
   background-size: cover;
   background-position: center center;
 }
+<<<<<<< HEAD
 
 /*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBSUE7RUFDSSx1QkFBQTs7QUFHSjtFQUNJLHVCQUFBOztBQUdKO0FBQ0E7QUFDQTtFQUNJLFdBQUE7O0FBR0o7QUFDQTtFQUNJLGFBQWEsNEJBQWI7RUFDQSxnQkFBQTtFQUNBLHlCQUFBOztBQUlKO0VBQ0ksZ0JBQUE7RUFDQSxrQkFBQTs7QUFHSjtFQUNJLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSwwQkFBQTs7QUFHSjtFQUNJLGdCQUFBO0VBQ0EsYUFBYSxxQkFBYjtFQUNBLGdCQUFBO0VBQ0EsY0FBQTs7QUFHSjtFQUNJLGNBQUE7O0FBR0o7RUFDSSx5QkFBQTs7QUFHSixNQUFNO0FBQ04sQ0FBQztFQUNHLGNBQUE7RUFDQSx5QkFBQTs7QUFHSixNQUFNO0FBQ04sQ0FBQyxJQUFJO0VBQ0QsV0FBQTtFQUNBLHlCQUFBOzs7QUFJSjtFQUNJLHlCQUFBOztBQUVKO0VBQ0ksY0FBQTs7QUFFSixTQUFTO0VBQ0wsY0FBQTs7O0FBS0o7RUFDSSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxzQkFBQTs7QUFJSjtFQUNJLGFBQUE7OztBQUlKO0VBQ0kseUJBQUE7OztBQUlKO0VBQ0ksYUFBYSw0QkFBYjtFQUNBLGdCQUFBO0VBQ0EsZ0JBQUE7O0FBR0o7RUFDSSx5QkFBQTs7QUFHSjtFQUNJLGlCQUFBO0VBQ0EsaURBQUE7O0FBR0osVUFDSTtFQUNJLGVBQUE7O0FBSVI7RUFDSSxzREFBQTtFQUNBLHNCQUFBO0VBQ0Esa0NBQUEiLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOltdfQ== */
+=======
+*/
+[data-xcaptcha],
+.xcaptcha {
+  max-width: 400px;
+}
+.xcaptcha[data-xcaptcha-started] {
+  background-color: #FAFAFA;
+  border: 5px solid #999;
+  border-radius: 10px;
+}
+.xcaptcha_title {
+  height: 35px;
+  line-height: 35px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 2px solid #999;
+}
+.xcaptcha_images {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.xcaptcha_images:after {
+  content: '';
+  display: table;
+  height: 0;
+  width: 0;
+  clear: both;
+  float: none;
+}
+.xcaptcha_images img {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+}
+.xcaptcha_images_amount_2 img {
+  width: 50%;
+}
+.xcaptcha_images_amount_3 img {
+  width: 33.33333333%;
+}
+.xcaptcha_images_amount_4 img {
+  width: 25%;
+}
+.xcaptcha_answer {
+  position: relative;
+}
+.xcaptcha_answer:before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 6px);
+  left: 10px;
+  height: 10px;
+  width: 10px;
+  border-top: 2px solid #999;
+  border-right: 2px solid #999;
+  transform: rotate(45deg);
+}
+.xcaptcha_answer input {
+  height: 40px;
+  line-height: 40px;
+  background-color: #f5f5f5;
+  border: 0 none;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  text-align: center;
+  outline: none;
+  display: block;
+  width: 100%;
+  font-size: 20px;
+}
+.xcaptcha_math {
+  position: relative;
+  border-bottom: 1px solid #999;
+}
+.xcaptcha_math:after {
+  content: '';
+  display: table;
+  height: 0;
+  width: 0;
+  clear: both;
+  float: none;
+}
+.xcaptcha_math,
+.xcaptcha_math * {
+  font-size: 30px;
+  text-align: center;
+}
+.xcaptcha_math_1,
+.xcaptcha_math_2,
+.xcaptcha_math input {
+  float: left;
+  width: 20%;
+  height: 60px;
+  line-height: 60px;
+}
+.xcaptcha_math_1,
+.xcaptcha_math_2 {
+  margin-right: 20%;
+  position: relative;
+}
+.xcaptcha_math_1:after,
+.xcaptcha_math_2:after {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
+.xcaptcha_math_1:after {
+  content: '+';
+}
+.xcaptcha_math_2:after {
+  content: '=';
+}
+.xcaptcha_math input {
+  border: 0 none;
+  outline: none;
+}
+.xcaptcha_submit {
+  cursor: pointer;
+}
+.xcaptcha_submit:before {
+  content: 'GO';
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
+.xcaptcha_ok {
+  padding: 10px;
+  text-align: cneter;
+  color: green;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBR0E7RUFDSSx1QkFBQTs7QUFHSjtFQUNJLHVCQUFBOztBQUdKO0FBQ0E7QUFDQTtBQUNBO0VBQ0ksV0FBQTs7QUFHSjtBQUNBO0VBQ0ksYUFBYSw0QkFBYjtFQUNBLGdCQUFBO0VBQ0EseUJBQUE7O0FBSUo7RUFDSSxnQkFBQTtFQUNBLGtCQUFBOztBQUdKO0VBQ0ksZ0JBQUE7RUFDQSxpQkFBQTtFQUNBLDBCQUFBOztBQUdKO0VBQ0ksZ0JBQUE7RUFDQSxhQUFhLHFCQUFiO0VBQ0EsZ0JBQUE7O0FBR0o7RUFDSSx5QkFBQTs7O0FBTUo7RUFDSSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxzQkFBQTs7QUFJSjtFQUNJLGFBQUE7OztBQUlKO0VBQ0kseUJBQUE7OztBQUlKO0VBQ0ksYUFBYSw0QkFBYjtFQUNBLGdCQUFBO0VBQ0EsZ0JBQUE7O0FBR0o7RUFDSSxpQkFBQTtFQUNBLGlEQUFBOztBQUdKLFVBQ0k7RUFDSSxlQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUE4RVI7QUFBaUI7RUFDYixnQkFBQTs7QUFJQSxTQUFDO0VBQ0cseUJBQUE7RUFDQSxzQkFBQTtFQUNBLG1CQUFBOztBQUdKLFNBQUM7RUFuQkQsWUFBQTtFQUNBLGlCQUFBO0VBb0JJLGVBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0VBQ0EsNkJBQUE7O0FBR0osU0FBQztFQUVHLGdCQUFBO0VBQ0EsY0FBQTs7QUF4Q0osU0FxQ0MsT0FyQ0E7RUFDRyxTQUFTLEVBQVQ7RUFDQSxjQUFBO0VBQ0EsU0FBQTtFQUNBLFFBQUE7RUFDQSxXQUFBO0VBQ0EsV0FBQTs7QUErQkosU0FBQyxPQUlHO0VBQ0ksY0FBQTtFQUNBLFdBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTs7QUFHQSxTQVhQLE9BVUksT0FDSSxFQUFHO0VBQUssVUFBQTs7QUFDVCxTQVpQLE9BVUksT0FFSSxFQUFHO0VBQUssbUJBQUE7O0FBQ1QsU0FiUCxPQVVJLE9BR0ksRUFBRztFQUFLLFVBQUE7O0FBSWpCLFNBQUM7RUFDRyxrQkFBQTs7QUFDQSxTQUZILE9BRUk7RUFDRyxTQUFTLEVBQVQ7RUFDQSxrQkFBQTtFQUNBLEtBQUssZUFBTDtFQUNBLFVBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtFQUNBLDBCQUFBO0VBQ0EsNEJBQUE7RUFDQSxXQUFXLGFBQVg7O0FBWFIsU0FBQyxPQWFHO0VBekRKLFlBQUE7RUFDQSxpQkFBQTtFQTJEUSx5QkFBQTtFQUNBLGNBQUE7RUFDQSwwQkFBQTtFQUNBLDZCQUFBO0VBQ0Esa0JBQUE7RUFDQSxhQUFBO0VBQ0EsY0FBQTtFQUNBLFdBQUE7RUFDQSxlQUFBOztBQUlSLFNBQUM7RUFHRyxrQkFBQTtFQUNBLDZCQUFBOztBQXRGSixTQWtGQyxLQWxGQTtFQUNHLFNBQVMsRUFBVDtFQUNBLGNBQUE7RUFDQSxTQUFBO0VBQ0EsUUFBQTtFQUNBLFdBQUE7RUFDQSxXQUFBOztBQWlGQSxTQUxIO0FBQUQsU0FBQyxLQUtNO0VBQ0MsZUFBQTtFQUNBLGtCQUFBOztBQUVKLFNBVEgsS0FTSTtBQUFJLFNBVFIsS0FTUztBQVRWLFNBQUMsS0FTYTtFQUNOLFdBQUE7RUFDQSxVQUFBO0VBbkZSLFlBQUE7RUFDQSxpQkFBQTs7QUFxRkksU0FkSCxLQWNJO0FBQUksU0FkUixLQWNTO0VBQ0YsaUJBQUE7RUFDQSxrQkFBQTs7QUFDQSxTQWpCUCxLQWNJLEVBR0k7QUFBRCxTQWpCUCxLQWNTLEVBR0Q7RUFDRyxrQkFBQTtFQUNBLE1BQUE7RUFDQSxVQUFBO0VBQ0EsV0FBQTtFQTdGWixZQUFBO0VBQ0EsaUJBQUE7O0FBaUdRLFNBMUJQLEtBeUJJLEVBQ0k7RUFDRyxTQUFTLEdBQVQ7O0FBSUosU0EvQlAsS0E4QkksRUFDSTtFQUNHLFNBQVMsR0FBVDs7QUFoQ1osU0FBQyxLQW1DRztFQUNJLGNBQUE7RUFDQSxhQUFBOztBQUlSLFNBQUM7RUFDRyxlQUFBOztBQUNBLFNBRkgsT0FFSTtFQUNHLFNBQVMsSUFBVDtFQUNBLGNBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxrQkFBQTtFQXhIUixZQUFBO0VBQ0EsaUJBQUE7O0FBNEhBLFNBQUM7RUFDRyxhQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQ0EsZ0JBQUEiLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOltdfQ== */
+>>>>>>> html42/dev

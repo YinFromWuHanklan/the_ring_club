@@ -1,0 +1,144 @@
+@distance_small: 10px;
+.clear_after() {
+    &:after {
+        content: '';
+        display: table;
+        height: 0;
+        width: 0;
+        clear: both;
+        float: none;
+    }
+}
+.h(@height) {
+    height: @height;
+    line-height: @height;
+}
+
+@xcaptcha_color_bg: #FAFAFA;
+@xcaptcha_color_border: #999;
+@xcaptcha_width: 400px;
+
+[data-xcaptcha], .xcaptcha {
+    max-width: @xcaptcha_width;
+}
+
+.xcaptcha {
+    &[data-xcaptcha-started] {
+        background-color: @xcaptcha_color_bg;
+        border: 5px solid @xcaptcha_color_border;
+        border-radius: 10px;
+    }
+
+    &_title {
+        .h(35px);
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        border-bottom: 2px solid @xcaptcha_color_border;
+    }
+    //option1
+    &_images {
+        .clear_after();
+        max-width: @xcaptcha_width;
+        margin: 0 auto;
+        img {
+            display: block;
+            float: left;
+            width: 100%;
+            height: auto;
+        }
+        &_amount {
+            &_2 img {width: 100% / 2}
+            &_3 img {width: 100% / 3}
+            &_4 img {width: 100% / 4}
+
+        }
+    }
+    &_answer {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: calc(~"50% - 6px");
+            left: 10px;
+            height: 10px;
+            width: 10px;
+            border-top: 2px solid @xcaptcha_color_border;
+            border-right: 2px solid @xcaptcha_color_border;
+            transform: rotate(45deg);
+        }
+        input {
+            @input_height: 40px;
+            .h(@input_height);
+            background-color: darken(@xcaptcha_color_bg, 2%);
+            border: 0 none;
+            border-top: 1px solid @xcaptcha_color_border;
+            border-bottom: 1px solid @xcaptcha_color_border;
+            text-align: center;
+            outline: none;
+            display: block;
+            width: 100%;
+            font-size: @input_height * 0.5;
+        }
+    }
+    //option2
+    &_math {
+        @math_height: 60px;
+        .clear_after();
+        position: relative;
+        border-bottom: 1px solid @xcaptcha_color_border;
+        &, * {
+            font-size: @math_height / 2;
+            text-align: center;
+        }
+        &_1, &_2, input {
+            float: left;
+            width: 20%;
+            .h(@math_height);
+        }
+        &_1, &_2 {
+            margin-right: 20%;
+            position: relative;
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 100%;
+                width: 100%;
+                .h(@math_height);
+            }
+        }
+        &_1 {
+            &:after {
+                content: '+'
+            }
+        }
+        &_2 {
+            &:after {
+                content: '='
+            }
+        }
+        input {
+            border: 0 none;
+            outline: none;
+        }
+    }
+    //buttons
+    &_submit {
+        cursor: pointer;
+        &:before {
+            content: 'GO';
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            .h(30px);
+        }
+    }
+    //
+    &_ok {
+        padding: @distance_small;
+        text-align: cneter;
+        color: green;
+        font-weight: 700;
+    }
+}
