@@ -15,7 +15,6 @@
                 'kursplan.html' => 'Kursplan',
                 'preise.html' => 'Preise',
                 'probetraining.html' => 'Probetraining',
-                'kontakt.html' => 'Kontakt',
             ) as $link_href => $link_text) {
                 $is_active = false;
                 if(strstr($_SERVER['REQUEST_URI'], $link_href)) {
