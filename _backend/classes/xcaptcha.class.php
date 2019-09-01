@@ -4,7 +4,7 @@ class Xcaptcha {
 
     public static $is_safe = false;
     public static $html = '';
-    public static $cache_path = ROOT . '_xtreme_cache/xcaptcha/';
+    public static $cache_path = ROOT . '_backend/_xtreme_cache/xcaptcha/';
     public static $img_width = null; //will change from picture to picture
     public static $img_height = 25;
     //
@@ -21,8 +21,8 @@ class Xcaptcha {
 
     public static function init() {
         //Just to be safe
-        @mkdir(ROOT . '_xtreme_cache');
-        @mkdir(ROOT . '_xtreme_cache/xcaptcha');
+        @mkdir(ROOT . '_backend/_xtreme_cache');
+        @mkdir(ROOT . '_backend/_xtreme_cache/xcaptcha');
         //
         Xcaptcha::$api_user_ip = Utilities::remote_ip();
         Xcaptcha::$api_user_ref = sha1(Xcaptcha::$api_user_ip . $_SERVER['HTTP_USER_AGENT']);
