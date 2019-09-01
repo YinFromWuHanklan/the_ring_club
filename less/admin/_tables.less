@@ -1,0 +1,30 @@
+@table_spacing: 10px;
+.admintable {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    -webkit-border-horizontal-spacing: 0;
+    -webkit-border-vertical-spacing: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: (@table_spacing / 2) solid rgba(255, 255, 255, 0.75);
+    margin: @distance_small 0 @distance_normal;
+    border-radius: 3px;
+    td {
+        padding: @table_spacing (@table_spacing * 2);
+    }
+    thead {
+        td {
+            background-color: rgba(255, 255, 255, 0.1);
+            font-weight: 700;
+        }
+    }
+    tbody {
+        tr:nth-child(odd) td {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+        tr:hover {
+            box-shadow: 0 0 @distance_small rgba(0, 0, 0, 0.2);
+            cursor: default;
+        }
+    }
+}

@@ -1,9 +1,4 @@
-<?php foreach (Xjsondb::select('trials') as $trial) { ?>
-    <div>
-        <div><?= date('H:i:s d.m.Y', $trial['insert_date']) ?></div>
-        <div><?= $trial['name'] ?></div>
-        <div><?= $trial['email'] ?></div>
-        <div><?= $trial['phone'] ?></div>
-        <div>#<?= $trial['id'] ?></div>
-    </div>
-<?php } ?>
+<h1>Opening-Anmeldungen</h1>
+<?= File::instance(DIR_BACKEND . 'partials/trials_table.php')->get_content() ?>
+
+<a href="../api/trials_download.php" target="_blank" class="button_dl">Liste Downloaden</a>

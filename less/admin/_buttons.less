@@ -1,0 +1,39 @@
+.button {
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #EEE;
+    font-weight: 700;
+    padding: @distance_small @distance_normal;
+    border-radius: 3px;
+    text-decoration: none;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #FFF;
+    }
+}
+.button_dl {
+    .button;
+    padding-left: @distance_big;
+    position: relative;
+    &:before {
+        @arrow_size: 12px;
+        content: '';
+        position: absolute;
+        top: calc(~"50% - @{arrow_size}");
+        height: @arrow_size;
+        width: @arrow_size;
+        border-right: 3px solid #EEE;
+        border-bottom: 3px solid #EEE;
+        transform: rotate(45deg);
+    }
+    &:before {
+        left: @distance_small;
+    }
+    &:hover {
+        &:before, &:after {
+            border-color: #FFF;
+        }
+    }
+}

@@ -6,6 +6,10 @@ var config = {
         'less/_xtreme_captcha.less',
         'less/elements/*.less'
     ],
+    css_admin: [
+        'less/admin/variables.less',
+        'less/admin/_*.less'
+    ],
     js: [
         'js/jquery/jquery.js',
         'js/jquery/jquery-xtreme.js',
@@ -17,6 +21,14 @@ var config = {
         'js/_xtreme_captcha.js',
         'js/opening.js',
         'js/project.js'
+    ],
+    js_admin: [
+        'js/jquery/jquery.js',
+        'js/jquery/jquery-xtreme.js',
+        'js/jquery/jquery-ui.js',
+        'js/jquery/jquery-touch-punch.js',
+        'js/_ajax_forms.js',
+        'js/admin/init.js'
     ]
 };
 
@@ -92,8 +104,18 @@ gulp.task('less', function () {
     //
     gulp.src('less/third_party/bootstrap.min.css').pipe(gulp.dest('./assets/css/'));
     //
-    return gulp.src(config.css)
+    gulp.src(config.css)
             .pipe(concat('style.css'))
+            .pipe(sourcemaps.init())
+            .pipe(less())
+            .pipe(base64({
+                baseDir: 'assets/images/',
+                maxImageSize: 10 * 1024
+            }))
+            .pipe(sourcemaps.write())
+            .pipe(gulp.dest('./assets/css/'));
+    return gulp.src(config.css_admin)
+            .pipe(concat('style_admin.css'))
             .pipe(sourcemaps.init())
             .pipe(less())
             .pipe(base64({
@@ -104,22 +126,36 @@ gulp.task('less', function () {
             .pipe(gulp.dest('./assets/css/'));
 });
 gulp.task('js', function () {
-    return gulp.src(config.js)
+    gulp.src(config.js)
             .pipe(sourcemaps.init())
             .pipe(concat('script.js'))
+            .pipe(sourcemaps.write())
+            .pipe(gulp.dest('./assets/js/'));
+    return gulp.src(config.js_admin)
+            .pipe(sourcemaps.init())
+            .pipe(concat('script_admin.js'))
             .pipe(sourcemaps.write())
             .pipe(gulp.dest('./assets/js/'));
 });
 //
 gulp.task('css-min', function () {
-    return gulp.src('./assets/css/style.css')
+    gulp.src('./assets/css/style.css')
             .pipe(concat('style.min.css'))
+            .pipe(minifyCSS())
+            .pipe(gulp.dest('./assets/css/'));
+    return gulp.src('./assets/css/style_admin.css')
+            .pipe(concat('style_admin.min.css'))
             .pipe(minifyCSS())
             .pipe(gulp.dest('./assets/css/'));
 });
 gulp.task('js-min', function () {
-    return gulp.src('./assets/js/script.js')
+    gulp.src('./assets/js/script.js')
             .pipe(concat('script.min.js'))
+            .pipe(jsmin())
+            .pipe(uglify())
+            .pipe(gulp.dest('./assets/js/'));
+    return gulp.src('./assets/js/script_admin.js')
+            .pipe(concat('script_admin.min.js'))
             .pipe(jsmin())
             .pipe(uglify())
             .pipe(gulp.dest('./assets/js/'));
