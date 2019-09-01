@@ -5,10 +5,15 @@ setTimeout(function () {
         setTimeout(project_init, 5);
     });
 }, 5);
+window.music = document.getElementById('background_music');
 //
 function project_init() {
 
-    setTimeout(opening_countdown, 1);
+    setTimeout(function() {
+        opening_countdown();
+        //
+        window.music.play();
+    }, 1);
     
     //Execute startup functions from other scripts
     setTimeout(function() {
@@ -17,10 +22,9 @@ function project_init() {
                 window.startup_functions[i]();
             }
         }
+        //
+        start_xcaptcha();
     }, 100);
-    
-    
-    setTimeout(start_xcaptcha, 100);
 
 }
 
