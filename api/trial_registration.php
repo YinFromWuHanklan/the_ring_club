@@ -37,7 +37,7 @@ if(!is_string($data['email']) || strlen($data['email']) < 5 || !strstr($data['em
 if(empty($response['errors'])) {
     Xjsondb::insert('trials', $data);
     $response['ok'] = true;
-    $response['response'] = 'Sie sind eingertagen.';
+    $response['response'] = 'Sie sind eingetragen.';
 }
 
 echo json_encode($response);
