@@ -20,9 +20,7 @@ include '../components/html_top.php';
                     <td>Donnerstag</td>
                     <td>Freitag</td>
                     <td>Samstag</td>
-                    <td>
-                        Sonntag
-                    </td>
+                    <td>Sonntag</td>
                 </tr>
             </thead>
             <tbody>

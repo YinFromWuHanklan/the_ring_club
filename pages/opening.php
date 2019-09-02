@@ -74,12 +74,16 @@ include '../components/html_top_no_header.php';
                 <label for="openingKurs" class="text-white">Boxkurs (Optional)</label><br />
                 <select name="course">
                     <option value="">Kurs auswählen</option>
-                    <option value="kurs1">Kurs 1</option>
-                    <option value="kurs2">Kurs 2</option>
-                    <option value="kurs3">Kurs 3</option>
-                    <option value="kurs4">Kurs 4</option>
-                    <option value="kurs5">Kurs 5</option>
-                    <option value="kurs6">Kurs 6</option>
+                    <option value="bomo18">Boxen Montag 18:30-20:00</option>
+                    <option value="bomo20">Boxen Montag 20:00-21:30</option>
+                    <option value="bodi18">Boxen Dienstag 18:30-20:00</option>
+                    <option value="bodi20">Boxen Dienstag 20:00 Sparring</option>
+                    <option value="bomi18">Boxen Mittwoch 18:30-20:00</option>
+                    <option value="bomi20">Boxen Mittwoch 20:00-21:30</option>
+                    <option value="bodo18">Boxen Donnerstag 18:30-20:00</option>
+                    <option value="bodo20">Boxen Donnerstag 20:00-21:30</option>
+                    <option value="bofr18">Boxen Freitag 18:30-20:00</option>
+                    <option value="bofr20">Boxen Freitag 20:00-21:30</option>
                 </select>
             </div>
             <div class="xcaptcha mt-4" data-xcaptcha></div>
