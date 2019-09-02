@@ -16,8 +16,8 @@ if (Admin::is_logged_in()) {
         array_push($row, '"' . $trial['name'] . '"');
         array_push($row, '"' . $trial['email'] . '"');
         array_push($row, '"' . $trial['phone'] . '"');
-        array_push($row, '"' . $trial['type'] . '"');
-        array_push($row, '"' . $trial['course'] . '"');
+        @array_push($row, '"' . $trial['type'] . '"');
+        @array_push($row, '"' . $trial['course'] . '"');
         $content .= "\n" . implode(',', $row);
     }
     header('Content-Disposition: attachment; filename="theringclub_trials_' . date('Y-m-d') . '.csv"');
