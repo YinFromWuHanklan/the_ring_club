@@ -64,26 +64,28 @@ include '../components/html_top_no_header.php';
                 <input type="text" class="form-control" name="email" placeholder="Email">
             </div>
             <div class="form-group">
-                <label for="openingKurs" class="text-white">Kurstyp wählen</label><br />
-                <select name="type">
-                    <option value="boxen">Boxen</option>
-                    <option value="athletic">Athletic</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="openingKurs" class="text-white">Boxkurs (Optional)</label><br />
+                <label for="openingKurs" class="text-white">Kurs wählen</label><br />
                 <select name="course">
                     <option value="">Kurs auswählen</option>
-                    <option value="bomo18">Boxen Montag 18:30-20:00</option>
-                    <option value="bomo20">Boxen Montag 20:00-21:30</option>
-                    <option value="bodi18">Boxen Dienstag 18:30-20:00</option>
-                    <option value="bodi20">Boxen Dienstag 20:00 Sparring</option>
-                    <option value="bomi18">Boxen Mittwoch 18:30-20:00</option>
-                    <option value="bomi20">Boxen Mittwoch 20:00-21:30</option>
-                    <option value="bodo18">Boxen Donnerstag 18:30-20:00</option>
-                    <option value="bodo20">Boxen Donnerstag 20:00-21:30</option>
-                    <option value="bofr18">Boxen Freitag 18:30-20:00</option>
-                    <option value="bofr20">Boxen Freitag 20:00-21:30</option>
+                    <option value="bomo18">Boxen Montag 18:30-20:00 Uhr</option>
+                    <option value="bomo20">Boxen Montag 20:00-21:30 Uhr</option>
+                    <option value="bodi18">Boxen Dienstag 18:30-20:00 Uhr</option>
+                    <option value="bodi20">Boxen Dienstag 20:00 Uhr Sparring</option>
+                    <option value="bomi18">Boxen Mittwoch 18:30-20:00 Uhr</option>
+                    <option value="bomi20">Boxen Mittwoch 20:00-21:30 Uhr</option>
+                    <option value="bodo18">Boxen Donnerstag 18:30-20:00 Uhr</option>
+                    <option value="bodo20">Boxen Donnerstag 20:00-21:30 Uhr</option>
+                    <option value="bofr17">Boxen Freitag 17:00-18:30 Uhr</option>
+                    <option value="atmo18">Athletic Montag 18:00-19:00 Uhr</option>
+                    <option value="atmo19">Athletic Montag 19:15-20:30 Uhr</option>
+                    <option value="atdi18">Athletic Dienstag 18:00-19:00 Uhr</option>
+                    <option value="atdi19">Athletic Dienstag 19:15-20:30 Uhr</option>
+                    <option value="atmi18">Athletic Mittwoch 18:00-19:00 Uhr</option>
+                    <option value="atmi19">Athletic Mittwoch 19:15-20:30 Uhr</option>
+                    <option value="atdo18">Athletic Donnerstag 18:00-19:00 Uhr</option>
+                    <option value="atdo19">Athletic Donnerstag 19:15-20:30 Uhr</option>
+                    <option value="atfr17">Athletic Freitag 17:00-18:00 Uhr</option>
+                    <option value="atfr18">Athletic Freitag 18:15-19:30 Uhr</option>
                 </select>
             </div>
             <div class="xcaptcha mt-4" data-xcaptcha></div>
