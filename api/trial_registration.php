@@ -13,6 +13,8 @@ $data = array(
     'name' => _var('name', $_PAYLOAD),
     'phone' => _var('phone', $_PAYLOAD),
     'email' => _var('email', $_PAYLOAD),
+    'type' => _var('type', $_PAYLOAD),
+    'course' => _var('course', $_PAYLOAD),
 );
 
 
@@ -25,7 +27,10 @@ if(!is_string($data['phone']) || strlen($data['phone']) < 2) {
 if(!is_string($data['email']) || strlen($data['email']) < 5 || !strstr($data['email'], '@')) {
     array_push($response['errors'], array('email', 'Bitte tragen Sie eine richtige E-Mail ein.'));
 }
-if(!Xcaptcha::check_if_safe()) {
+if(!is_string($data['type']) || empty($data['type'])) {
+    array_push($response['errors'], array('type', 'Bitte tragen Sie einen richtigen Kurstyp ein.'));
+}
+if(!Xcaptcha::check_if_safe() || !isset($_PAYLOAD['xcaptcha'])) {
     array_push($response['errors'], array('captcha', 'Bitte tragen erfüllen Sie das Captcha.'));
 }
 

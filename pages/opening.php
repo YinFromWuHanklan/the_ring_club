@@ -65,9 +65,21 @@ include '../components/html_top_no_header.php';
             </div>
             <div class="form-group">
                 <label for="openingKurs" class="text-white">Kurstyp wählen</label><br />
-                <select name="kurstyp">
-                    <option value="boxen" name="boxen">Boxen</option>
-                    <option value="athletic" name="athletic">Athletic</option>
+                <select name="type">
+                    <option value="boxen">Boxen</option>
+                    <option value="athletic">Athletic</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="openingKurs" class="text-white">Boxkurs (Optional)</label><br />
+                <select name="course">
+                    <option value="">Kurs auswählen</option>
+                    <option value="kurs1">Kurs 1</option>
+                    <option value="kurs2">Kurs 2</option>
+                    <option value="kurs3">Kurs 3</option>
+                    <option value="kurs4">Kurs 4</option>
+                    <option value="kurs5">Kurs 5</option>
+                    <option value="kurs6">Kurs 6</option>
                 </select>
             </div>
             <div class="xcaptcha mt-4" data-xcaptcha></div>

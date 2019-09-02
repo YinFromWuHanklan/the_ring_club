@@ -6,6 +6,8 @@
             <td>Name</td>
             <td>E-Mail</td>
             <td>Tel.</td>
+            <td>Typ</td>
+            <td>Kurs</td>
         </tr>
     </thead>
     <tbody>
@@ -16,6 +18,8 @@
                 <td><?= $trial['name'] ?></td>
                 <td><?= $trial['email'] ?></td>
                 <td><?= $trial['phone'] ?></td>
+                <td><?= $trial['type'] ?></td>
+                <td><?= $trial['course'] ?></td>
             </tr>
         <?php } ?>
     </tbody>
