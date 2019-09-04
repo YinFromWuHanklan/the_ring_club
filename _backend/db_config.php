@@ -22,7 +22,6 @@ $XDB->add_tables(array(
             return strtoupper(md5($data['id'] . '||' . $email));
         },
         'email' => '',
-        'type' => '',
         'course' => '',
     ),
 ));
