@@ -137,7 +137,7 @@ include '../components/html_top.php';
             <a href="opening.html" role="button" class="btn p-3">Probetraining buchen</a>
         </div>
 
-        <h2 class="text-center">
+        <!-- <h2 class="text-center">
             Kursbeschreibung
         </h2>
         <h3>
@@ -163,7 +163,7 @@ include '../components/html_top.php';
         </h3>
         <p>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        </p>
+        </p> -->
     </div>
     <div class="col-md-2">
 
