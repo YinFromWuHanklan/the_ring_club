@@ -12,9 +12,7 @@ include '../components/html_top.php';
 
         <h1>Probetraining</h1>
         <p>
-            Da Qualität seine Daseinsberechtigung hat und wir den Probetrainingstourismus nicht fördern haben wir uns
-            dazu
-            entschlossen für das Probetraining 25.- Euro zu verlangen.
+        Da uns die Qualität einer jeden Trainingseinheit am Herzen liegt und wir den Probetrainingstourismus nicht fördern wollen, haben wir uns dazu entschlossen für das Probetraining 25,- Euro zu verlangen.
         </p>
         <p>
             Selbstverständlich wird dieser Betrag bei Abschluss einer Mitgliedschaft verrechnet!

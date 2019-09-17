@@ -14,25 +14,15 @@ include '../components/html_top.php';
         <div class="row mt-4">
             <div class="col-md-6">
                 <p>
-                    Unsere Intention ist es eine Trainingsstätte für Boxen und Athletik Training zur Verfügung zu stellen die
-                    keine
-                    Wünsche offen lässt in Hinblick auf Ausstattung, Trainer und Ambiente.
+                Unser Anliegen ist es eine Trainingsstätte für Boxen und Athletik Training zur Verfügung zu stellen, die in Hinblick auf anspruchsvolle Ausstattung, motivierende Trainer und inspirierendes Ambiente keine Wünsche offenlässt.
                 </p>
                 <p>
-                    Wir wollen Menschen ab 30 Jahren ansprechen die sich in den bestehenden Studios oder Clubs nicht sehen, sei
-                    es
-                    auf Grund der sehr durchwachsenen Mitgliederstruktur derer oder dem fehlenden Spaß- und Leistungsfaktor der
-                    diversen Angebote.
+                Wir sprechen Freizeitsportler und Ambitionierte ab 30 Jahren an, die sich in den hiesigen (Münchner) Studios oder Sportclubs nicht wiederfinden. Sei es auf Grund einer durchwachsenen Mitgliederstruktur oder dem fehlenden Spaß- und Leistungsfaktor der dortigen Angebote. Wir „The Ring“ versprechen Motivation und Leidenschaft für den (Box-) Sport.
                 </p>
             </div>
             <div class="col-md-6">
                 <p>
-                    Unsere Mitglieder sind Menschen die sich eine gewisse Position im bisherigen Leben erarbeitet haben und
-                    neben
-                    der hohen Qualität auch den Erfolg suchen in sportlicher Hinsicht. Sei es um ein Ventil für den Alltag zu
-                    haben,
-                    kleine Insuffizienzen der Muskulatur ( Schmerzen ) zu beheben oder ein höheres Maß an Leistungsfähigkeit zu
-                    erreichen gepaart mit einer optischen Veränderung des eigenen Körpers.
+                Unsere Mitglieder sind leistungs- und qualitätsorientierte Menschen, die auch in Ihrer Freizeit Erfolge in sportlicher Hinsicht suchen. Mancher nutzt den Sport als Ventil, um den Alltag zu kompensieren, kleine Insuffizienzen der Muskulatur zu beheben, Schmerzen zu lindern, ein höheres Maß an Leistungsfähigkeit zu erreichen oder einfach um Spaß zu haben. Alle diese unterschiedlichen und individuellen Wünsche für ein gelungenes Training behandeln wir mit Respekt und gepaart mit einer, wenn erwünscht, gezielten Beratung zur optischen Veränderung des Körpers.
                 </p>
             </div>
         </div>
@@ -50,21 +40,21 @@ include '../components/html_top.php';
         <div class="row mt-4">
             <div class="col-md-6">
                 <p>
-                    Wir bieten im Boxen als auch im Athletik Training verschiedene Trainingsstunden an damit wir eine adäquate Auslastung des jeweiligen Leistungsvermögens ohne Unter- oder Überforderung gewährleisten können.
+                Wir bieten im Boxen als auch im Athletik Training eine Vielfalt an Trainingsstunden an, um eine adäquate Auslastung des individuellen Leistungsvermögens ohne Unter- oder Überforderung gewährleisten zu können.
                 </p>
                 <p>
-                    Anfängerstunden trainieren die Motorik, Balance und sollen neben der sportlichen Belastung die Wahrnehmung des eigenen Körpers sensibilisieren. Ferner werden die Bewegungsabläufe für das jeweilige Anforderungsprofil ( Boxen oder Athletik ) geschult um langfristig gesund und ohne Verschleiß trainieren zu können.
+                In Anfängerstunden trainieren wir vor Allem Motorik und Balance. Hier sollen einhergehend mit der sportlichen Belastung die Wahrnehmung des eigenen Körpers sensibilisiert werden. Zusätzlich werden Bewegungsabläufe für das jeweilige Anforderungsprofil (Boxen oder Athletik ) geschult, um langfristig gesund und ohne Verschleiß trainieren zu können.
                 </p>
             </div>
             <div class="col-md-6">
                 <p>
-                    Bei den Fortgeschritteneren erhöht sich neben der muskulären Belastung auch die Anforderung an die Reaktionszeiten des Körpers unter Bewegung (komplexere Bewegungsabläufe) als auch das „umschalten“ von Kraft auf Balance um die Konzentrationsfähigkeit zu erhöhen.
+                Bei den Fortgeschritteneren erhöht sich neben der muskulären Belastung auch die Anforderung an die Reaktionszeiten des Körpers unter Bewegung (komplexere Bewegungsabläufe), als auch das „Umschalten“ von Kraft auf Balance, um die Konzentrationsfähigkeit zu erhöhen.
                 </p>
                 <p>
-                    Beim Boxen legen wir auf ein sportliches und respektvolles Miteinander Wert um uns gegenseitig zu fordern  ohne Blessuren oder Verletzungen zu erhalten. Dies gilt unabhängig von Geschlecht oder Leistungsstand.
+                Beim Boxen legen wir auf ein sportliches und respektvolles Miteinander Wert. Wir trainieren immer fair und gemeinsam ohne Blessuren oder Verletzungen zu fordern. Dies gilt unabhängig von Geschlecht oder Leistungsstand.
                 </p>
                 <p>
-                    Mit Beständigkeit und Vernunft einen fitteren und gesunden Körper zu aufzubauen oder zu erhalten.
+                Mit Beständigkeit und Vernunft einen fitten und gesunden Körper aufbauen oder zu erhalten ist unser hoher Anspruch, den wir mit unseren ausgewählten Trainern und geschätzten Mitgliedern verwirklichen.
                 </p>
             </div>
         </div>
@@ -82,9 +72,7 @@ include '../components/html_top.php';
             Probetraining
         </h2>
         <p>
-            Da Qualität seine Daseinsberechtigung hat und wir den Probetrainingstourismus nicht fördern haben wir uns
-            dazu
-            entschlossen für das Probetraining 25.- Euro zu verlangen.
+        Da uns die Qualität einer jeden Trainingseinheit am Herzen liegt und wir den Probetrainingstourismus nicht fördern wollen, haben wir uns dazu entschlossen für das Probetraining 25,- Euro zu verlangen.
         </p>
         <p>
             Selbstverständlich wird dieser Betrag bei Abschluss einer Mitgliedschaft verrechnet!
