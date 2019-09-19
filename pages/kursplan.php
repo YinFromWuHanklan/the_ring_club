@@ -14,6 +14,44 @@ include '../components/html_top.php';
         <h2 class="text-center">
             Boxen
         </h2>
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-2">
+            <div class="class_title">Montag</div>
+            <p>18:30 - 20:00 Uhr</p>
+            <p>20:00 - 21:30 Uhr</p>
+        </div>
+        <div class="col-md-2">
+            <div class="class_title">Dienstag</div>
+            <p>18:30 - 20:00 Uhr</p>
+            <p>20:00 Uhr Sparring</p>
+        </div>
+        <div class="col-md-2">
+            <div class="class_title">Mittwoch</div>
+            <p>18:30 - 20:00 Uhr</p>
+            <p>20:00 - 21:30 Uhr</p>
+        </div>
+        <div class="col-md-2">
+            <div class="class_title">Donnerstag</div>
+            <p>18:30 - 20:00 Uhr</p>
+            <p>20:00 - 21:30 Uhr</p>
+        </div>
+        <div class="col-md-2">
+            <div class="class_title">Freitag</div>
+            <p>17:00 - 18:30 Uhr</p>
+            <p>
+                
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
         <!-- Desktop -->
         <table class="table table-bordered table-dark mt-5 d-none d-md-block">
             <thead>
