@@ -4,15 +4,16 @@ $website_description = 'Kursplan | The Ring Boxing Club';
 include '../components/html_top.php';
 ?>
 
-<div class="row">
-    <div class="col-md-2">
-
-    </div>
-    <div class="my-5 col-md-8">
 
         <h1>Kursplan</h1>
 
-        <h2 class="text-center">Boxen</h2>
+        <div class="container border-top">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center">Boxen</h2>
+                </div>
+            </div>
+        </div>
 
 
 <div class="container">
@@ -118,10 +119,5 @@ include '../components/html_top.php';
         <p>
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
         </p> -->
-    </div>
-    <div class="col-md-2">
-
-    </div>
-</div>
 
 <?php include ROOT . "components/html_bottom.php"; ?>
