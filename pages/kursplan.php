@@ -5,40 +5,40 @@ include '../components/html_top.php';
 ?>
 
 <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-1">
 
     </div>
-    <div class="my-5 col-md-8">
+    <div class="my-5 col-md-10">
 
         <h1>Kursplan</h1>
 
         <h2 class="text-center">Boxen</h2>
 
 
-<div class="container">
+<div class="container mt-4">
     <div class="row justify-content-center">
-        <div class="col-md-2">
-            <div class="class_title">Montag</div>
+        <div class="col-md-2 col-sm-4 table_cell">
+            <div class="text-white class_title">Montag</div>
             <p>18:00 - 19:00 Uhr</p>
             <p>19:15 - 20:30 Uhr</p>
         </div>
-        <div class="col-md-2">
-            <div class="class_title">Dienstag</div>
+        <div class="col-md-2 col-sm-4 table_cell">
+            <div class="text-white class_title">Dienstag</div>
             <p>18:00 - 19:00 Uhr</p>
             <p>20:00 Uhr Sparring</p>
         </div>
-        <div class="col-md-2">
-            <div class="class_title">Mittwoch</div>
+        <div class="col-md-2 col-sm-4 table_cell">
+            <div class="text-white class_title">Mittwoch</div>
             <p>18:00 - 19:00 Uhr</p>
             <p>19:15 - 20:30 Uhr</p>
         </div>
-        <div class="col-md-2">
-            <div class="class_title">Donnerstag</div>
+        <div class="col-md-2 col-sm-4 table_cell">
+            <div class="text-white class_title">Donnerstag</div>
             <p>18:00 - 19:00 Uhr</p>
             <p>19:15 - 20:30 Uhr</p>
         </div>
-        <div class="col-md-2">
-            <div class="class_title">Freitag</div>
+        <div class="col-md-2 col-sm-4 table_cell">
+            <div class="text-white class_title">Freitag</div>
             <p>17:00 - 18:30 Uhr</p>
             <p>
                 
@@ -56,30 +56,30 @@ include '../components/html_top.php';
             Athletic
         </h2>
 
-<div class="container">
+<div class="container mt-4">
     <div class="row justify-content-center">
-        <div class="col-md-2">
-            <div class="class_title">Montag</div>
+        <div class="col-md-2 col-sm-4 table_cell">
+            <div class="text-white class_title">Montag</div>
             <p>18:00 - 19:00 Uhr</p>
             <p>19:15 - 20:30 Uhr</p>
         </div>
-        <div class="col-md-2">
-            <div class="class_title">Dienstag</div>
+        <div class="col-md-2 col-sm-4 table_cell">
+            <div class="text-white class_title">Dienstag</div>
             <p>18:00 - 19:00 Uhr</p>
             <p>19:15 - 20:30 Uhr</p>
         </div>
-        <div class="col-md-2">
-            <div class="class_title">Mittwoch</div>
+        <div class="col-md-2 col-sm-4 table_cell">
+            <div class="text-white class_title">Mittwoch</div>
             <p>18:00 - 19:00 Uhr</p>
             <p>19:15 - 20:30 Uhr</p>
         </div>
-        <div class="col-md-2">
-            <div class="class_title">Donnerstag</div>
+        <div class="col-md-2 col-sm-4 table_cell">
+            <div class="text-white class_title">Donnerstag</div>
             <p>18:00 - 19:00 Uhr</p>
             <p>19:15 - 20:30 Uhr</p>
         </div>
-        <div class="col-md-2">
-            <div class="class_title">Freitag</div>
+        <div class="col-md-2 col-sm-4 table_cell">
+            <div class="text-white class_title">Freitag</div>
             <p>17:00 - 18:00 Uhr</p>
             <p>18:15 - 19:30 Uhr</p>
         </div>
@@ -119,7 +119,7 @@ include '../components/html_top.php';
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
         </p> -->
     </div>
-    <div class="col-md-2">
+    <div class="col-md-1">
 
     </div>
 </div>
