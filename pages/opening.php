@@ -10,7 +10,7 @@ include '../components/html_top_no_header.php';
     </div>
     <div class="my-5 col-md-8">
         <img src="assets/images/thering-logo.png" alt="The Ring" width="400" class="img-fluid mx-auto d-block" />
-        <h1>The Ring Boxing Club Opening</h1>
+        <h1>The Ring Boxing Club Opening<br /><br />14.10.2019</h1>
 
         <p id="countdownOpening" class="text-white text-center mt-5 p-3"></p>
 
