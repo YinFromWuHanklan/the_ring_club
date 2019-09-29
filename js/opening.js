@@ -2,7 +2,7 @@
 function opening_countdown() {
     var selector = '#countdownOpening';
     if ($("#countdownOpening").length) {
-        var countDownDate = new Date("Oct 1, 2019 10:00:00").getTime();
+        var countDownDate = new Date("Oct 14, 2019 00:01:00").getTime();
 
         setInterval(_create_countdown_time, 1000);
         _create_countdown_time();
