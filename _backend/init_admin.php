@@ -12,6 +12,9 @@ if(!is_string(Admin::$path) || empty(Admin::$path)) {
 if(strstr($_SERVER['REQUEST_URI'], '/admin/admin/')) {
     Utilities::redirect('../' . Admin::$path);
 }
+if(Admin::$path != 'login' && !Admin::is_logged_in()) {
+    Utilities::redirect('login');
+}
 
 
 $admin_content = Admin::$page_File->get_content();
