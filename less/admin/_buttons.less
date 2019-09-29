@@ -21,6 +21,7 @@
         @arrow_size: 12px;
         content: '';
         position: absolute;
+        left: @distance_small;
         top: calc(~"50% - @{arrow_size}");
         height: @arrow_size;
         width: @arrow_size;
@@ -28,8 +29,26 @@
         border-bottom: 3px solid #EEE;
         transform: rotate(45deg);
     }
+    &:hover {
+        &:before, &:after {
+            border-color: #FFF;
+        }
+    }
+}
+.button_create {
+    .button;
+    padding-left: @distance_big;
+    position: relative;
     &:before {
+        @plus_size: 30px;
+        content: '+';
+        position: absolute;
         left: @distance_small;
+        top: calc(~"50% - (@{plus_size} / 2)");
+        font-size: @plus_size;
+        height: @plus_size;
+        line-height: @plus_size - 1px;
+        font-weight: 700;
     }
     &:hover {
         &:before, &:after {

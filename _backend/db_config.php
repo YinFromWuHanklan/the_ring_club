@@ -24,12 +24,22 @@ $XDB->add_tables(array(
         'email' => '',
         'course' => '',
     ),
+    'courses' => array(
+        'name' => '',
+        'times' => array(),
+    ),
+    'customers' => array(
+        'name' => '',
+        'email' => '',
+        'courses' => array(),
+        'banks' => array(),
+    ),
 ));
 
 $XDB->add_validations(array(
     'users' => array(
         'groups' => array('id' => array('user_groups', 'user_id')),
-    ),
+    )
 ));
 
 $XDB->init();

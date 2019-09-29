@@ -1,0 +1,28 @@
+.page_login {
+    form {
+        @input_size: 40px;
+        display: block;
+        margin: 0 auto;
+        max-width: 800px;
+        background-color: rgba(0, 0, 0, .2);
+        padding: @distance_normal;
+        input, button {
+            width: 100%;
+            .h(@input_size);
+            display: block;
+            font-size: @input_size * 0.5;
+            padding: 0 @distance_normal;
+            appearance: none;
+            webkit-appearance: none;
+            outline: none; 
+            + input, + button {
+                margin-top: @distance_small;
+            }
+        }
+        button {
+            line-height: @input_size * 0.4;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}

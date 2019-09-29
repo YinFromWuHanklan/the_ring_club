@@ -21,6 +21,12 @@
                         <li>
                             <a href="trials">Opening-Anmeldungen</a>
                         </li>
+                        <li>
+                            <a href="customers">Kunden</a>
+                        </li>
+                        <li>
+                            <a href="courses">Kurse</a>
+                        </li>
                     </ul>
                 </nav>
             </header>
@@ -28,6 +34,9 @@
                 ###CONTENT###
             </main>
         </div>
+        <script>
+            var BASEURL = "<?= BASEURL ?>";
+        </script>
         <script src="assets/js/script_admin<?= IS_LIVE ? '.min' : '' ?>.js" async></script>
     </body>
 </html>

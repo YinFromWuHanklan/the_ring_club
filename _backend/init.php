@@ -6,11 +6,18 @@ include DIR_BACKEND_CLASSES . 'utilities.class.php';
 include DIR_BACKEND_CLASSES . 'validate.class.php';
 include DIR_BACKEND_CLASSES . 'curl.class.php';
 include DIR_BACKEND_CLASSES . 'xcaptcha.class.php';
+#
+include DIR_BACKEND_CLASSES . 'project/customer.class.php';
+include DIR_BACKEND_CLASSES . 'project/course.class.php';
 
 //
-
-define('BASEURL', '');
-
+$path_to_script = str_replace(basename($_SERVER["SCRIPT_NAME"]), '', $_SERVER["SCRIPT_NAME"]);
+if (substr($path_to_script, 0, 1) == '/') {
+    $path_to_script = substr($path_to_script, 1);
+}
+$url_path_to_script = str_replace('_backend/', '', $path_to_script);
+define('BASEURL', "http" . (is_https() ? 's' : '') . "://" . $_SERVER['SERVER_NAME'] . '/' . $url_path_to_script);
+//
 
 //################### Taken from XPM #########################
 include DIR_BACKEND_CLASSES . 'jsondb.class.php';
@@ -68,7 +75,7 @@ if (!empty($input)) {
     if (substr($input, strlen($input) - 2) == '"') {
         $input = substr($input, 0, strlen($input));
     }
-    if(strstr($input, '{') && strstr($input, '}')) {
+    if (strstr($input, '{') && strstr($input, '}')) {
         $_PAYLOAD = json_decode($input, true);
     } else {
         parse_str($input, $_PAYLOAD);
