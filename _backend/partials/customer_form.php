@@ -1,40 +1,41 @@
 <?php
-if (!isset($userid)) {
-    $userid = 0;
+if (!isset($customerid)) {
+    $customerid = 0;
 }
-if ($userid == 0 && isset($_GET['userid'])) {
-    $userid = Validate::strict_int($_GET['userid']);
-} else if ($userid == 0 && isset($_GET['id'])) {
-    $userid = Validate::strict_int($_GET['id']);
-} else if ($userid == 0 && isset($_POST['userid'])) {
-    $userid = Validate::strict_int($_POST['userid']);
-} else if ($userid == 0 && isset($_POST['id'])) {
-    $userid = Validate::strict_int($_POST['id']);
+if ($customerid == 0 && isset($_GET['userid'])) {
+    $customerid = Validate::strict_int($_GET['userid']);
+} else if ($customerid == 0 && isset($_GET['id'])) {
+    $customerid = Validate::strict_int($_GET['id']);
+} else if ($customerid == 0 && isset($_POST['userid'])) {
+    $customerid = Validate::strict_int($_POST['userid']);
+} else if ($customerid == 0 && isset($_POST['id'])) {
+    $customerid = Validate::strict_int($_POST['id']);
+}
+$Customer = new Customer($customerid);
+
+function customer_value($key) {
+    
+}
+
+function _row($name, $type = 'text') {
+    ob_start();
+    ?>
+    <label class="row">
+        <span class="row_label">
+            <?= ucfirst($name) ?>
+        </span>
+        <span class="row_input">
+            <input type="<?= $type ?>" name="<?= $name ?>" value="<?= customer_value($name) ?>" />
+        </span>
+    </label>
+    <?php
+    return ob_get_clean();
 }
 ?>
 <form class="form_customer">
-    <label class="row">
-        <span class="row_label">
-
-        </span>
-        <span class="row_input">
-
-        </span>
-    </label>
-    <label class="row">
-        <span class="row_label">
-
-        </span>
-        <span class="row_input">
-
-        </span>
-    </label>
-    <label class="row">
-        <span class="row_label">
-
-        </span>
-        <span class="row_input">
-
-        </span>
-    </label>
+    <?= _row('name') ?>
+    <?= _row('email') ?>
+    <div class="row row_submit">
+        <input class="button" name="submit_x" value="<?= $Customer->id > 0 ? 'Kunde bearbeiten' : 'Kunde erstellen' ?>" />
+    </div>
 </form>
