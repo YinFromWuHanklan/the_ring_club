@@ -43,5 +43,8 @@ function form_inputs($form) {
 }
 
 window.startup_functions.push(function () {
-    ajax_forms('form[data-ajax-form]')
+    setInterval(function () {
+        ajax_forms('form[data-ajax-form]:not([data-ajaxed])')
+        $('form[data-ajax-form]').attr('data-ajaxed', '');
+    }, 666);
 });

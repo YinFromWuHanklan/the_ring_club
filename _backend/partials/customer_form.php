@@ -13,6 +13,8 @@ if ($customerid == 0 && isset($_GET['userid'])) {
 }
 $Customer = new Customer($customerid);
 
+$is_new = $Customer->id < 1;
+
 function customer_value($key) {
     
 }
@@ -32,10 +34,10 @@ function _row($name, $type = 'text') {
     return ob_get_clean();
 }
 ?>
-<form class="form_customer">
+<form data-ajax-form="../api/adm_customer_<?= $is_new ? 'create' : 'edit' ?>.php" class="form_basics form_customer">
     <?= _row('name') ?>
     <?= _row('email') ?>
     <div class="row row_submit">
-        <input class="button" name="submit_x" value="<?= $Customer->id > 0 ? 'Kunde bearbeiten' : 'Kunde erstellen' ?>" />
+        <input type="submit" class="button" name="submit_x" value="<?= $Customer->id > 0 ? 'Kunde bearbeiten' : 'Kunde erstellen' ?>" />
     </div>
 </form>

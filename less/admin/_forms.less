@@ -1,0 +1,47 @@
+.form_basics {
+    .row {
+        .clear_after();
+        display: block;
+        + .row {
+            margin-top: @distance_small;
+        }
+        &_label {
+            float: left;
+            min-height: 1em;
+            width: 30%;
+            line-height: 20px;
+            padding: 5px 0;
+        }
+        &_input {
+            float: right;
+            width: calc(~"70% - @{distance_small}");
+        }
+        &_submit {
+            margin-top: @distance_small;
+            border-top: 1px solid #CCC;
+            padding-top: @distance_small;
+        }
+        //
+        input:not(.button), select, textarea {
+            .h(30px);
+            border: 1px solid #CCC;
+            background-color: #F6F6F6;
+            color: #333;
+            border-radius: 3px;
+            padding: 0 @distance_small;
+            display: block;
+            width: 100%;
+            outline: none;
+            &:hover {
+                background-color: #FFF;
+            }
+            &:focus {
+                background-color: #FFF;
+                color: #000;
+            }
+        }
+    }
+}
+.form_customer {
+
+}
