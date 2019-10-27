@@ -9,16 +9,20 @@ window.music = document.getElementById('background_music');
 //
 function project_init() {
 
-    setTimeout(function() {
-        opening_countdown();
+    setTimeout(function () {
+        if (typeof opening_countdown == 'function') {
+            opening_countdown();
+        }
         //
-        window.music.play();
+        if (window.music) {
+            window.music.play();
+        }
     }, 1);
-    
+
     //Execute startup functions from other scripts
-    setTimeout(function() {
-        for(var i in window.startup_functions) {
-            if(typeof window.startup_functions[i] == 'function') {
+    setTimeout(function () {
+        for (var i in window.startup_functions) {
+            if (typeof window.startup_functions[i] == 'function') {
                 window.startup_functions[i]();
             }
         }

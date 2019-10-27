@@ -28,6 +28,8 @@ var config = {
         'js/jquery/jquery-ui.js',
         'js/jquery/jquery-touch-punch.js',
         'js/_ajax_forms.js',
+        'js/_xtreme_captcha.js',
+        'js/project.js',
         'js/admin/init.js'
     ]
 };
