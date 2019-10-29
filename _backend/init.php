@@ -64,6 +64,29 @@ function _var($key, $var = null) {
     }
 }
 
+function fetch_times($var = null) {
+    $return = array();
+    if (is_array($var)) {
+        foreach ($var as $key => $value) {
+            if (substr($key, 0, 6) == 'times[') {
+                $times_index = substr($key, 6, 1);
+                if (is_numeric($times_index)) {
+                    $times_index = intval($times_index);
+                    if (!isset($return[$times_index])) {
+                        $return[$times_index] = array();
+                    }
+                    //
+                    $times_prestring = 'times[' . $times_index . '][';
+                    $times_prestring_length = strlen($times_prestring);
+                    $times_subkey = substr($key, $times_prestring_length, strlen($key) - 1);
+                    $return[$times_index][$times_subkey] = $value;
+                }
+            }
+        }
+    }
+    return $return;
+}
+
 function _str($value, $minlength = 2) {
     return is_string($value) && strlen($value) >= $minlength;
 }

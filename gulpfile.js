@@ -30,6 +30,7 @@ var config = {
         'js/_ajax_forms.js',
         'js/_xtreme_captcha.js',
         'js/project.js',
+        'js/admin/courses.js',
         'js/admin/init.js'
     ]
 };

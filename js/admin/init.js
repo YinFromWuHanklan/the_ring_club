@@ -12,6 +12,10 @@ function init() {
         var customer_id = $(this).data('id');
         location.href = BASEURL + 'admin/customer?id=' + customer_id;
     });
+    $('.courses_table tr[data-id]').click(function() {
+        var course_id = $(this).data('id');
+        location.href = BASEURL + 'admin/course?id=' + course_id;
+    });
 }
 
 function popup_by_url(url) {
