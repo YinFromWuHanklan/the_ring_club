@@ -18,7 +18,6 @@ if (substr($path_to_script, 0, 1) == '/') {
 $url_path_to_script = str_replace('_backend/', '', $path_to_script);
 define('BASEURL', "http" . (is_https() ? 's' : '') . "://" . $_SERVER['SERVER_NAME'] . '/' . $url_path_to_script);
 //
-
 //################### Taken from XPM #########################
 include DIR_BACKEND_CLASSES . 'jsondb.class.php';
 include DIR_BACKEND_CLASSES . 'xdb.class.php';
@@ -65,6 +64,30 @@ function _var($key, $var = null) {
     }
 }
 
+function _str($value, $minlength = 2) {
+    return is_string($value) && strlen($value) >= $minlength;
+}
+
+/** From: https://www.php.net/manual/de/function.parse-str.php    || And minimized */
+function proper_parse_str($str, &$variable) {
+    $str = urldecode($str);
+    $arr = array();
+    $pairs = explode('&', $str);
+    foreach ($pairs as $i) {
+        list($name, $value) = explode('=', $i, 2);
+        if (isset($arr[$name])) {
+            if (is_array($arr[$name])) {
+                $arr[$name][] = $value;
+            } else {
+                $arr[$name] = array($arr[$name], $value);
+            }
+        } else {
+            $arr[$name] = $value;
+        }
+    }
+    $variable = $arr;
+}
+
 //Create $_PAYLOAD
 
 $input = file_get_contents('php://input');
@@ -72,13 +95,13 @@ if (!empty($input)) {
     if (substr($input, 0, 1) == '"') {
         $input = substr($input, 1);
     }
-    if (substr($input, strlen($input) - 2) == '"') {
-        $input = substr($input, 0, strlen($input));
+    if (substr($input, strlen($input) - 1) == '"') {
+        $input = substr($input, 0, strlen($input) - 1);
     }
     if (strstr($input, '{') && strstr($input, '}')) {
         $_PAYLOAD = json_decode($input, true);
     } else {
-        parse_str($input, $_PAYLOAD);
+        proper_parse_str($input, $_PAYLOAD);
     }
 } else {
     $_PAYLOAD = array();

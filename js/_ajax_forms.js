@@ -30,16 +30,6 @@ function ajax_form(form) {
 
 function form_inputs($form) {
     return $form.serialize();
-    //
-    var inputs = {};
-    if ($form && $form.length) {
-        $form.find('input, select, textarea').each(function () {
-            if ($(this).attr('name') && $(this).attr('value')) {
-                inputs[$(this).attr('name')] = $.trim($(this).attr('value'));
-            }
-        });
-    }
-    return inputs;
 }
 
 window.startup_functions.push(function () {

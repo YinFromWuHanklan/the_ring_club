@@ -8,6 +8,7 @@ Admin::init();
 App::check_spam();
 
 if (Admin::is_logged_in()) {
+    $customer_id = _var('id', $_PAYLOAD);
     $response = array(
         'ok' => true,
         'errors' => array(),
@@ -24,6 +25,9 @@ if (Admin::is_logged_in()) {
         'courses' => _var('courses', $_PAYLOAD),
     );
     $errors = array();
+    if (!is_numeric($customer_id) || $customer_id <= 0) {
+        array_push($errors, array('id', 'Customer-ID konnte nicht erkannt werden.'));
+    }
     if (!_str($data['firstname'], 2)) {
         array_push($errors, array('firstname', 'Bitte validen Vornamen eingeben.'));
     }
@@ -35,10 +39,10 @@ if (Admin::is_logged_in()) {
     }
     //
     if (empty($errors)) {
-        $user_id = Xjsondb::insert('customers', $data);
-        if ($user_id > 0) {
+        $edit_response = Xjsondb::update('customers', $customer_id, $data);
+        if ($edit_response) {
             $response['response'] = array(
-                $user_id,
+                $customer_id,
                 'Kunde erfolgreich gespeichert.'
             );
         } else {

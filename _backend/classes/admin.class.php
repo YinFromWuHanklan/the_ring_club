@@ -15,6 +15,9 @@ class Admin {
         } else {
             $path_after_admin = '';
         }
+        if(strstr($path_after_admin, '?')) {
+            $path_after_admin = @reset(explode('?', $path_after_admin));
+        }
         self::$path = trim($path_after_admin);
         //
         $page_filepath = null;

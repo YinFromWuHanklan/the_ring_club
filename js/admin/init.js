@@ -8,6 +8,10 @@ function init() {
     $('[data-popup]').click(function () {
         popup_by_url($(this).data('popup'));
     });
+    $('.customer_table tr[data-id]').click(function() {
+        var customer_id = $(this).data('id');
+        location.href = BASEURL + 'admin/customer?id=' + customer_id;
+    });
 }
 
 function popup_by_url(url) {
@@ -36,8 +40,8 @@ function popup(popup_content) {
     //
     $('body').append($all);
     var $close = $wrap.find('.popup_close');
-    $close.click(function() {
-        $all.fadeOut(500, function() {
+    $close.click(function () {
+        $all.fadeOut(500, function () {
             $(this).remove();
         });
     });
@@ -45,4 +49,23 @@ function popup(popup_content) {
     setTimeout(function () {
         $all.fadeIn(750);
     }, 10);
+}
+
+function admin_forms_success(response, $form) {
+    setTimeout('location.reload(true)', 3000);
+    var userid = response[0];
+    var responsetext = response[1];
+    $form.find('.form_response').addClass('success').html(responsetext);
+}
+
+function admin_forms_error(errors, $form) {
+    var errors_text = [];
+    $(errors).each(function (index, item) {
+        console.log(item);
+        $form.find('[name="' + item[0] + '"]').closest('.row').addClass('error').click(function () {
+            $(this).removeClass('error');
+        });
+        errors_text.push(item[1]);
+    });
+    $form.find('.form_response').addClass('error').html(errors_text.join('<br>'));
 }

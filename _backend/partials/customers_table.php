@@ -1,4 +1,4 @@
-<table class="admintable">
+<table class="admintable customer_table">
     <thead>
         <tr>
             <td>ID</td>
@@ -8,10 +8,11 @@
     </thead>
     <tbody>
         <?php foreach (Xjsondb::select('customers') as $customer) { ?>
-            <tr>
-                <td>#<?= $customer['id'] ?></td>
-                <td><?= date('H:i d.m.Y', $customer['insert_date']) ?></td>
-                <td><?= $customer['name'] ?></td>
+            <?php $Customer = new Customer($customer['id']) ?>
+            <tr data-id="<?= $Customer->id ?>">
+                <td>#<?= $Customer->id ?></td>
+                <td><?= $Customer->inserted ?></td>
+                <td><?= $Customer->name ?></td>
             </tr>
         <?php } ?>
     </tbody>

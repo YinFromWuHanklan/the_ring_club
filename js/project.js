@@ -28,6 +28,7 @@ function project_init() {
         }
         //
         start_xcaptcha();
+        setInterval('$("select[multiple]:not([size])").each(function(){$(this).attr("size",$(this).children("option").length)})', 333);
     }, 100);
 
 }

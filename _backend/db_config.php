@@ -29,10 +29,13 @@ $XDB->add_tables(array(
         'times' => array(),
     ),
     'customers' => array(
-        'name' => '',
+        'gender' => '',
+        'firstname' => '',
+        'lastname' => '',
         'email' => '',
+        'phone' => '',
         'courses' => array(),
-        'banks' => array(),
+        'bank_iban' => array(),
     ),
 ));
 

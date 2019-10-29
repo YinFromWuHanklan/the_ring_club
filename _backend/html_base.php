@@ -9,7 +9,7 @@
 
         <link rel="stylesheet" href="assets/css/style_admin<?= IS_LIVE ? '.min' : '' ?>.css" />
     </head>
-    <body id="body">
+    <body id="body" class="adminpage_<?= Admin::$path ?>">
         <div id="page">
             <header>
                 <div class="logo">The Ring Club - Administration</div>

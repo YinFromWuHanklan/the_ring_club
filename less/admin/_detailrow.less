@@ -1,0 +1,14 @@
+.detail_row {
+    .clear_after();
+    &_label {
+        float: left;
+        width: 200px;
+    }
+    &_value {
+        float: right;
+        width: calc(~"100% - 200px - @{distance_normal}");
+    }
+    &, &_label, &_value {
+        min-height: 1px;
+    }
+}

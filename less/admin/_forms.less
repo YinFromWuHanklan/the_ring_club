@@ -40,6 +40,40 @@
                 color: #000;
             }
         }
+        select[multiple] {
+            height: auto;
+            padding: 0;
+            option {
+                .h(2em);
+                padding: 0.5em;
+            }
+        }
+        &.error {
+            input, select, textarea {
+                background-color: rgba(200, 0, 0, 0.1);
+                border-color: rgba(200, 0, 0, 0.2);
+            }
+        }
+    }
+    .form_response {
+        display: none;
+        font-weight: 700;
+        padding: @distance_small;
+        border-radius: 3px;
+        margin-top: @distance_small;
+        line-height: 1.2em;
+        font-size: 0.75em;
+        &.success, &.error, &.fail {
+            display: block;
+        }
+        &.success {
+            background-color: rgba(0, 200, 0, 0.1);
+            color: rgba(0, 200, 0, 0.75);
+        }
+        &.error, &.fail {
+            background-color: rgba(200, 0, 0, 0.1);
+            color: rgba(200, 0, 0, 0.75);
+        }
     }
 }
 .form_customer {
