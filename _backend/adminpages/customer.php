@@ -61,3 +61,17 @@ $id = $Customer->id;
         <?= @$Customer->db['phone'] ?>
     </div>
 </div>
+
+<h2>Vertrag</h2>
+<div class="detail_row">
+    <div class="detail_row_label">
+        Bezahlmodel
+    </div>
+    <div class="detail_row_value">
+        <?php if ($Customer->db['paymodel'] == '6-mon') { ?>
+            6-Monate
+        <?php } else if ($Customer->db['paymodel'] == '12-mon') { ?>
+            12-Monate
+        <?php } ?>
+    </div>
+</div>
