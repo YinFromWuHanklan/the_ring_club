@@ -1,0 +1,60 @@
+[data-course-times] {
+    .coursetimes_wrap {
+        margin-top: @distance_small;
+        padding: @distance_small;
+        background-color: rgba(0, 0, 0, .05);
+    }
+    .coursetimes_add {
+        margin-top: 2px;
+    }
+    .coursetimes_row {
+        .clear_after();
+        + .coursetimes_row {
+            margin-top: 2px;
+        }
+        &_day, &_time, &_order {
+            float: left;
+            width: 100% / 3;
+            input {
+                display: block;
+                width: 100%;
+                height: 40px;
+                -webkit-appearance: none;
+                outline: none;
+                border: 1px solid rgba(0, 0, 0, 0.25);
+                padding: 0 @distance_small;
+                &:focus {
+                    border-color: rgba(0, 0, 0, 0.5);
+                }
+                &::-webkit-input-placeholder {
+                    color: rgba(0, 0, 0, 0.25) !important;
+                    font-style: italic !important;
+                }
+                &:-ms-input-placeholder {
+                    color: rgba(0, 0, 0, 0.25) !important;
+                    font-style: italic !important;
+                }
+                &::placeholder {
+                    color: rgba(0, 0, 0, 0.25) !important;
+                    font-style: italic !important;
+                }
+            }
+        }
+        &_day {
+            input {
+                border-right-width: 0.5px;
+            }
+        }
+        &_time {
+            input {
+                border-left-width: 0.5px;
+                border-right-width: 0.5px;
+            }
+        }
+        &_order {
+            input {
+                border-left-width: 0.5px;
+            }
+        }
+    }
+}
