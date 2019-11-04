@@ -15,40 +15,33 @@ if (Admin::is_logged_in()) {
         'response' => '',
     );
     $data = array(
-        'gender' => _var('gender', $_PAYLOAD),
-        'firstname' => _var('firstname', $_PAYLOAD),
-        'lastname' => _var('lastname', $_PAYLOAD),
-        'email' => _var('email', $_PAYLOAD),
-        'phone' => _var('phone', $_PAYLOAD),
-        'bank_iban' => _var('bank_iban', $_PAYLOAD),
-        'paymodel' => _var('paymodel', $_PAYLOAD),
-        'courses' => _var('courses', $_PAYLOAD),
+        'name' => _var('name', $_PAYLOAD),
+        'times' => fetch_times($_PAYLOAD),
     );
     $errors = array();
-    if (!is_numeric($customer_id) || $customer_id <= 0) {
-        array_push($errors, array('id', 'Customer-ID konnte nicht erkannt werden.'));
-    }
-    if (!_str($data['firstname'], 2)) {
-        array_push($errors, array('firstname', 'Bitte validen Vornamen eingeben.'));
-    }
-    if (!_str($data['lastname'], 2)) {
-        array_push($errors, array('lastname', 'Bitte validen Nachnamen eingeben.'));
-    }
-    if (is_string($data['email']) && strlen($data['email']) > 0 && !Validate::is_email($data['email'])) {
-        array_push($errors, array('email', 'Email-Adresse ist ungültig.'));
+    if (!_str($data['name'], 4)) {
+        array_push($errors, array('name', 'Bitte validen Kursnamen eingeben.'));
     }
     //
     if (empty($errors)) {
-        $edit_response = Xjsondb::update('customers', $customer_id, $data);
-        if ($edit_response) {
+        foreach ($data['times'] as $index => $item) {
+            if (!isset($item['day']) || strlen($item['day']) < 2 || !isset($item['time']) || strlen($item['time']) < 2) {
+                unset($data['times'][$index]);
+            }
+        }
+        sort($data['times']);
+        //
+        $course_id = Xjsondb::insert('courses', $data);
+        if ($course_id > 0) {
             $response['response'] = array(
-                $customer_id,
-                'Kunde erfolgreich gespeichert.'
+                $course_id,
+                'Kurs erfolgreich gespeichert.'
             );
         } else {
             $response['ok'] = false;
-            $response['errors'] = array('Customer could not be saved.');
+            $response['errors'] = array('Course could not be saved.');
             $response['response'] = 'Process not successfull.';
+            $response['debug'] = array($_PAYLOAD, $data);
         }
     } else {
         $response['ok'] = false;

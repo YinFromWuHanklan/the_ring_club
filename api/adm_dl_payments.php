@@ -13,6 +13,7 @@ if (Admin::is_logged_in()) {
     echo '<select name="month" class="">';
     foreach (range(2019, date('Y')) as $year) {
         foreach (range(01, 12) as $month) {
+            echo '<option>' . $year . '-' . $month . '</option>';
             if(($year > 2019 || $month > 9) && ($year < date('Y') || $month < date('m'))) {
                 echo '<option value="' . $year . '-' . $month . '">';
                 echo $year . '-' . $month;

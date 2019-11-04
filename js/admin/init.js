@@ -56,6 +56,7 @@ function popup(popup_content) {
 }
 
 function admin_forms_success(response, $form) {
+    return false; 
     setTimeout('location.reload(true)', 3000);
     var userid = response[0];
     var responsetext = response[1];
