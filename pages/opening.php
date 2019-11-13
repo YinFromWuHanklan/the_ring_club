@@ -10,7 +10,7 @@ include '../components/html_top_no_header.php';
     </div>
     <div class="my-5 col-md-8">
         <img src="assets/images/thering-logo.png" alt="The Ring" width="400" class="img-fluid mx-auto d-block" />
-        <h1>The Ring Boxing Club Opening<br /><br />04.11.2019</h1>
+        <h1>The Ring Boxing Club Opening<br /><br />18.11.2019</h1>
 
         <p id="countdownOpening" class="text-white text-center mt-5 p-3"></p>
 
@@ -88,7 +88,6 @@ include '../components/html_top_no_header.php';
                     <option value="atfr18">Athletic Freitag 18:15-19:30 Uhr</option>
                 </select>
             </div>
-            <div class="xcaptcha mt-4" data-xcaptcha></div>
             <div class="text-center mt-4">
                 <button type="submit" class="btn p-3">Probetraining jetzt buchen</button>
             </div>

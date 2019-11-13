@@ -29,9 +29,9 @@ if(!is_string($data['email']) || strlen($data['email']) < 5 || !strstr($data['em
 if(!is_string($data['course']) || empty($data['course'])) {
     array_push($response['errors'], array('course', 'Bitte wählen Sie einen Kurs aus.'));
 }
-if(!Xcaptcha::check_if_safe() || !isset($_PAYLOAD['xcaptcha'])) {
-    array_push($response['errors'], array('captcha', 'Bitte tragen erfüllen Sie das Captcha.'));
-}
+#if(!Xcaptcha::check_if_safe() || !isset($_PAYLOAD['xcaptcha'])) {
+#    array_push($response['errors'], array('captcha', 'Bitte tragen erfüllen Sie das Captcha.'));
+#}
 
 if(empty($response['errors'])) {
     Xjsondb::insert('trials', $data);
