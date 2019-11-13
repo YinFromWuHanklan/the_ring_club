@@ -11,7 +11,6 @@ include DIR_BACKEND_CLASSES . 'xcaptcha.class.php';
 
 define('BASEURL', '');
 
-
 //################### Taken from XPM #########################
 include DIR_BACKEND_CLASSES . 'jsondb.class.php';
 include DIR_BACKEND_CLASSES . 'xdb.class.php';

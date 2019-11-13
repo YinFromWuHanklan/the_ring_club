@@ -88,6 +88,7 @@ include '../components/html_top_no_header.php';
                     <option value="atfr18">Athletic Freitag 18:15-19:30 Uhr</option>
                 </select>
             </div>
+            <div class="xcaptcha mt-4" data-xcaptcha></div>
             <div class="text-center mt-4">
                 <button type="submit" class="btn p-3">Probetraining jetzt buchen</button>
             </div>

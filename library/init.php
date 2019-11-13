@@ -5,7 +5,7 @@ ini_set('short_open_tag', 1);
 ini_set('magic_quotes_gpc', 1);
 ini_set("memory_limit", "512M");
 
-@session_start();
+session_start();
 if(!isset($_SESSION['trc'])) {
     $_SESSION['trc'] = array();
 }
@@ -32,6 +32,5 @@ if (isset($_ENV['environment'])) {
 define('IS_LIVE', ENV == 'live');
 
 include DIR_LIB . 'functions.php';
-
 //Kickstart Backend.
 include DIR_BACKEND . 'init.php';
