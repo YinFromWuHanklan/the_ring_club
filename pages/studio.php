@@ -4,7 +4,7 @@ $website_description = 'Studio';
 include '../components/html_top_no_header.php';
 ?>
 
-<div class="row">
+<!-- <div class="row">
     <div class="col-md-2">
 
     </div>
@@ -16,6 +16,18 @@ include '../components/html_top_no_header.php';
     <div class="col-md-2">
 
     </div>
+</div> -->
+
+<h1>Studio</h1>
+<!-- Desktop -->
+<div class="container d-none d-md-block">
+    <div class="col-md-12">
+        <?php include '../components/slideshow.html' ?>
+    </div>
+</div>
+<!-- Mobile -->
+<div class="container d-md-none d-sm-block">
+    <?php include '../components/slideshow_mobile.html' ?>
 </div>
 
 <!-- 
