@@ -31,37 +31,39 @@ include '../components/html_top.php';
 
     </div> 
 </div>
-<div class="row background_index_1">
-    <div class="col-md-2">
-
-    </div> 
-    <div class="mx-5 col-md-8">
-        <h2 class="text-center">Trainingsphilosophie</h2>
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <p>
-                Wir bieten im Boxen als auch im Athletik Training eine Vielfalt an Trainingsstunden an, um eine adäquate Auslastung des individuellen Leistungsvermögens ohne Unter- oder Überforderung gewährleisten zu können.
-                </p>
-                <p>
-                In Anfängerstunden trainieren wir vor Allem Motorik und Balance. Hier sollen einhergehend mit der sportlichen Belastung die Wahrnehmung des eigenen Körpers sensibilisiert werden. Zusätzlich werden Bewegungsabläufe für das jeweilige Anforderungsprofil (Boxen oder Athletik ) geschult, um langfristig gesund und ohne Verschleiß trainieren zu können.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <p>
-                Bei den Fortgeschritteneren erhöht sich neben der muskulären Belastung auch die Anforderung an die Reaktionszeiten des Körpers unter Bewegung (komplexere Bewegungsabläufe), als auch das „Umschalten“ von Kraft auf Balance, um die Konzentrationsfähigkeit zu erhöhen.
-                </p>
-                <p>
-                Beim Boxen legen wir auf ein sportliches und respektvolles Miteinander Wert. Wir trainieren immer fair und gemeinsam ohne Blessuren oder Verletzungen zu fordern. Dies gilt unabhängig von Geschlecht oder Leistungsstand.
-                </p>
-                <p>
-                Mit Beständigkeit und Vernunft einen fitten und gesunden Körper aufbauen oder zu erhalten ist unser hoher Anspruch, den wir mit unseren ausgewählten Trainern und geschätzten Mitgliedern verwirklichen.
-                </p>
+<div class="background_index_1">
+    <div class="row">
+        <div class="col-md-2">
+    
+        </div> 
+        <div class="mx-5 col-md-8">
+            <h2 class="text-center">Trainingsphilosophie</h2>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <p>
+                    Wir bieten im Boxen als auch im Athletik Training eine Vielfalt an Trainingsstunden an, um eine adäquate Auslastung des individuellen Leistungsvermögens ohne Unter- oder Überforderung gewährleisten zu können.
+                    </p>
+                    <p>
+                    In Anfängerstunden trainieren wir vor Allem Motorik und Balance. Hier sollen einhergehend mit der sportlichen Belastung die Wahrnehmung des eigenen Körpers sensibilisiert werden. Zusätzlich werden Bewegungsabläufe für das jeweilige Anforderungsprofil (Boxen oder Athletik ) geschult, um langfristig gesund und ohne Verschleiß trainieren zu können.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                    Bei den Fortgeschritteneren erhöht sich neben der muskulären Belastung auch die Anforderung an die Reaktionszeiten des Körpers unter Bewegung (komplexere Bewegungsabläufe), als auch das „Umschalten“ von Kraft auf Balance, um die Konzentrationsfähigkeit zu erhöhen.
+                    </p>
+                    <p>
+                    Beim Boxen legen wir auf ein sportliches und respektvolles Miteinander Wert. Wir trainieren immer fair und gemeinsam ohne Blessuren oder Verletzungen zu fordern. Dies gilt unabhängig von Geschlecht oder Leistungsstand.
+                    </p>
+                    <p>
+                    Mit Beständigkeit und Vernunft einen fitten und gesunden Körper aufbauen oder zu erhalten ist unser hoher Anspruch, den wir mit unseren ausgewählten Trainern und geschätzten Mitgliedern verwirklichen.
+                    </p>
+                </div>
             </div>
         </div>
+        <div class="col-md-2">
+    
+        </div> 
     </div>
-    <div class="col-md-2">
-
-    </div> 
 </div>
 <div class="row">
     <div class="col-md-2">
