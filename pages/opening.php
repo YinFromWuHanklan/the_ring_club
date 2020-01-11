@@ -10,11 +10,11 @@ include '../components/html_top_no_header.php';
     </div>
     <div class="my-5 col-md-8">
         <img src="assets/images/thering-logo.png" alt="The Ring" width="400" class="img-fluid mx-auto d-block" />
-        <h1>The Ring Boxing Club Opening<br /><br />14.10.2019</h1>
+        <h1>The Ring Boxing Club München</h1>
 
-        <p id="countdownOpening" class="text-white text-center mt-5 p-3"></p>
+        <!-- <p id="countdownOpening" class="text-white text-center mt-5 p-3"></p> -->
 
-        <h2 class="text-center">Eröffnungspreise</h2>
+        <h2 class="text-center">Preise</h2>
         <div class="row mt-5">
             <div class="col-md-6">
                 <div class="card bg-dark m-3 text-white">
@@ -23,7 +23,7 @@ include '../components/html_top_no_header.php';
                     </div>
                     <div class="card-body text-center">
                         <div class="card-title pricing-card-title">
-                            €119,-
+                            €149,-
                             <small class="text-muted">/ mtl.</small>
                         </div>
                     </div>
@@ -36,7 +36,7 @@ include '../components/html_top_no_header.php';
                     </div>
                     <div class="card-body text-center">
                         <div class="card-title pricing-card-title">
-                            €139,-
+                            €189,-
                             <small class="text-muted">/ mtl.</small>
                         </div>
                     </div>            
@@ -45,7 +45,7 @@ include '../components/html_top_no_header.php';
         </div>
 
         <p>
-            zzgl. einmalig 100,- € Aufnahmegebühr
+            zzgl. einmalig 150,- € Aufnahmegebühr
         </p>
 
         <h2 class="text-center">Anmeldung</h2>
@@ -88,7 +88,6 @@ include '../components/html_top_no_header.php';
                     <option value="atfr18">Athletic Freitag 18:15-19:30 Uhr</option>
                 </select>
             </div>
-            <div class="xcaptcha mt-4" data-xcaptcha></div>
             <div class="text-center mt-4">
                 <button type="submit" class="btn p-3">Probetraining jetzt buchen</button>
             </div>
