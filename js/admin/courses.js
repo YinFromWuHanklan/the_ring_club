@@ -8,7 +8,6 @@ function init_coursetimes() {
 function coursetimes(root) {
     var $root = $(root);
     var current = $root.data('course-times');
-    console.log(current);
     if (current === null || typeof current != 'object') {
         current = [];
     }
@@ -24,7 +23,14 @@ function coursetimes(root) {
         $wrap.append(create_course_row());
     });
     //
-    console.log(current);
+    $$.foreach(current, function (time_spans, day) {
+        $$.foreach(time_spans, function (times) {
+            var $row = create_course_row();
+            $row.find('.coursetimes_row_day input').val(times['day']);
+            $row.find('.coursetimes_row_time input').val(times['time']);
+            $row.find('.coursetimes_row_order input').val(times['order']);
+        });
+    });
     //
     function create_course_row() {
         var $row = $('<div class="coursetimes_row" />');

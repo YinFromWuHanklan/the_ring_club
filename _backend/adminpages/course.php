@@ -6,4 +6,5 @@ $id = $Course->id;
 
 <script>var COURSE_ID = <?= $id ?>;</script>
 <div class="course_id"><?= $id ?></div>
+<?= $Course->times_formatted() ?>
 <div class="button course_edit" data-popup="api/adm_course.php?courseid=<?= $id ?>">Bearbeiten</div>
