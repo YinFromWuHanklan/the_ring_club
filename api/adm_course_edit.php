@@ -8,7 +8,7 @@ Admin::init();
 App::check_spam();
 
 if (Admin::is_logged_in()) {
-    $customer_id = _var('id', $_PAYLOAD);
+    $course_id = _var('id', $_PAYLOAD);
     $response = array(
         'ok' => true,
         'errors' => array(),
@@ -22,6 +22,11 @@ if (Admin::is_logged_in()) {
     if (!_str($data['name'], 4)) {
         array_push($errors, array('name', 'Bitte validen Kursnamen eingeben.'));
     }
+    if(!is_numeric($course_id) || $course_id <= 0) {
+        array_push($errors, array('id', 'Kurs-ID ist falsch.'));
+    } else {
+        $course_id = intval($course_id);
+    }
     //
     if (empty($errors)) {
         foreach ($data['times'] as $index => $item) {
@@ -31,8 +36,8 @@ if (Admin::is_logged_in()) {
         }
         sort($data['times']);
         //
-        $course_id = Xjsondb::insert('courses', $data);
-        if ($course_id > 0) {
+        $update_response = Xjsondb::update('courses', $course_id, $data);
+        if ($update_response) {
             $response['response'] = array(
                 $course_id,
                 'Kurs erfolgreich gespeichert.'

@@ -79,6 +79,9 @@ function fetch_times($var = null) {
                     $times_prestring = 'times[' . $times_index . '][';
                     $times_prestring_length = strlen($times_prestring);
                     $times_subkey = substr($key, $times_prestring_length, strlen($key) - 1);
+                    if(substr($times_subkey, -1) == ']') {
+                        $times_subkey = substr($times_subkey, 0, -1);
+                    }
                     $return[$times_index][$times_subkey] = $value;
                 }
             }

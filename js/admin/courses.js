@@ -8,6 +8,7 @@ function init_coursetimes() {
 function coursetimes(root) {
     var $root = $(root);
     var current = $root.data('course-times');
+    console.log(current);
     if (current === null || typeof current != 'object') {
         current = [];
     }
@@ -22,6 +23,8 @@ function coursetimes(root) {
     $add_row.click(function () {
         $wrap.append(create_course_row());
     });
+    //
+    console.log(current);
     //
     function create_course_row() {
         var $row = $('<div class="coursetimes_row" />');
