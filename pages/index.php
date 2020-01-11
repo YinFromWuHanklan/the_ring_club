@@ -1,6 +1,6 @@
 <?php
-$website_title = 'The Ring Boxing Club Munich';
-$website_description = 'The Ring Boxing Club Munich';
+$website_title = 'The Ring Boxing Club München';
+$website_description = 'The Ring Boxing Club München';
 include '../components/html_top.php';
 ?>
 
@@ -10,7 +10,7 @@ include '../components/html_top.php';
     </div>
     <div class="mx-5 col-md-8">
 
-        <h1>The Ring Boxing Club Munich</h1>
+        <h1>The Ring Boxing Club München</h1>
         <div class="row mt-4">
             <div class="col-md-6">
                 <p>
@@ -31,7 +31,7 @@ include '../components/html_top.php';
 
     </div> 
 </div>
-<div class="row">
+<div class="row background_index_1">
     <div class="col-md-2">
 
     </div> 
@@ -85,7 +85,5 @@ include '../components/html_top.php';
 
     </div>
 </div>
-
-<?php include '../components/slideshow.html' ?>
 
 <?php include ROOT . "components/html_bottom.php"; ?>
