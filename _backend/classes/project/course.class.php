@@ -44,8 +44,9 @@ class Course {
     }
 
     public function times_formatted() {
-        $html = '<div class="course_times">';
-        foreach ($this->times() as $time_day => $time_spans) {
+        $times = $this->times();
+        $html = '<div class="course_times" data-length="' . count($times) . '">';
+        foreach ($times as $time_day => $time_spans) {
             $html .= '<div class="course_times_row">';
             $html .= '<div class="course_times_day">' . $time_day . '</div>';
             foreach ($time_spans as $time) {
@@ -53,7 +54,7 @@ class Course {
             }
             $html .= '</div>';
         }
-        $html .= '<div class="course_times">';
+        $html .= '</div>';
         return $html;
     }
 

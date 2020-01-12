@@ -23,14 +23,16 @@ function coursetimes(root) {
         $wrap.append(create_course_row());
     });
     //
-    $$.foreach(current, function (time_spans, day) {
-        $$.foreach(time_spans, function (times) {
+    for (var day in current) {
+        for (var i in current[day]) {
+            var time_span = current[day][i];
+            var keys = {day: 1, time: 1, order: 1};
             var $row = create_course_row();
-            $row.find('.coursetimes_row_day input').val(times['day']);
-            $row.find('.coursetimes_row_time input').val(times['time']);
-            $row.find('.coursetimes_row_order input').val(times['order']);
-        });
-    });
+            for (var key in  keys) {
+                $row.find('.coursetimes_row_' + key + ' input').val(times[key]);
+            }
+        }
+    }
     //
     function create_course_row() {
         var $row = $('<div class="coursetimes_row" />');
