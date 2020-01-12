@@ -1,6 +1,7 @@
 RewriteEngine On
 
 RewriteRule (assets.*) $1 [L]
+RewriteRule (audio.*) $1 [L]
 RewriteRule (.*)\.html pages/$1.php [QSA,L]
 
 ##AdminArea
