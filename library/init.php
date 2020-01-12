@@ -25,8 +25,10 @@ if (isset($_ENV['environment'])) {
     $ENV_dev = (bool) preg_match('/(192\.168\.\d+\.\d+|localhost|.+\.docker)/i', $_SERVER['SERVER_NAME']);
     if ($ENV_dev) {
         define('ENV', 'dev');
-    } elseif ($_SERVER['SERVER_NAME'] == 'staging.the-ring-club.de') {
+    } elseif ($_SERVER['SERVER_NAME'] == 'staging.thering-muc.de') {
         define('ENV', 'staging');
+    } elseif ($_SERVER['SERVER_NAME'] == 'thering-muc.de' || $_SERVER['SERVER_NAME'] == 'www.thering-muc.de') {
+        define('ENV', 'live');
     }
 }
 define('IS_LIVE', ENV == 'live');
