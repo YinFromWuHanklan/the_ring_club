@@ -1,7 +1,7 @@
 <?php
 $website_title = 'Neueröffnung the Ring Boxing Club';
 $website_description = 'Neueröffnung the Ring Boxing Club';
-include '../components/html_top_no_header.php';
+include '../components/html_top.php';
 ?>
 
 <div class="row">

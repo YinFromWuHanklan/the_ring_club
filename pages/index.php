@@ -1,7 +1,7 @@
 <?php
 $website_title = 'The Ring Boxing Club München';
 $website_description = 'The Ring Boxing Club München';
-include '../components/html_top.php';
+include '../components/html_top_header.php';
 ?>
 
 <div class="row">

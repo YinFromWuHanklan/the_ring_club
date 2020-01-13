@@ -1,7 +1,7 @@
 <?php
 $website_title = 'Studio';
 $website_description = 'Studio';
-include '../components/html_top_no_header.php';
+include '../components/html_top.php';
 ?>
 
 <!-- <div class="row">
