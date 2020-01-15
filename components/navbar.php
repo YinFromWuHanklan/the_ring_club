@@ -12,6 +12,14 @@
             <?php
             foreach (array(
         'studio.html' => 'Studio',
+        array(
+            'text' => 'Kursplan',
+            'href' => 'kursplan.html', //optional
+            'items' => array(
+                'kursplan-boxen.html' => 'Kursplan Boxen',
+                'kursplan-fitness.html' => 'Kursplan Fitness',
+            )
+        ),
         'kursplan.html' => 'Kursplan',
         'preise.html' => 'Preise',
         'probetraining.html' => 'Probetraining',
