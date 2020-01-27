@@ -14,7 +14,7 @@
         'studio.html' => 'Studio',
         array(
             'text' => 'Kursplan',
-            'href' => 'kursplan.html', //optional
+            'href' => 'kursplan.html',
             'items' => array(
                 'kursplan-boxen.html' => 'Kursplan Boxen',
                 'kursplan-fitness.html' => 'Kursplan Fitness',
