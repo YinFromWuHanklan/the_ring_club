@@ -22,30 +22,31 @@
             -->
             <?php
             foreach (array(
+        'index.html' => 'Home',
         'studio.html' => 'Studio',
-        array(
-            'text' => 'Kursplan',
-            'href' => 'kursplan.html',
-            'items' => array(
-                'kursplan-boxen.html' => 'Kursplan Boxen',
-                'kursplan-fitness.html' => 'Kursplan Fitness',
-            )
-        ),
+        // array(
+        //     'text' => 'Kursplan',
+        //     'href' => 'kursplan.html',
+        //     'items' => array(
+        //         'kursplan-boxen.html' => 'Kursplan Boxen',
+        //         'kursplan-fitness.html' => 'Kursplan Fitness',
+        //     )
+        // ),
         'kursplan.html' => 'Kursplan',
         'preise.html' => 'Preise',
         'probetraining.html' => 'Probetraining',
         'personaltraining.html' => 'Personaltraining',
-        'events.html' => 'Events',
-        'blog.html' => 'Blog',
-        array(
-            'text' => 'Submenu',
-            'href' => 'submenu.html', //optional
-            'items' => array(
-                'submenu_1.html' => 'Submenu 1',
-                'submenu_2.html' => 'Submenu 2',
-                'submenu_3.html' => 'Submenu 3',
-            )
-        ),
+        // 'events.html' => 'Events',
+        // 'blog.html' => 'Blog',
+        // array(
+        //     'text' => 'Submenu',
+        //     'href' => 'submenu.html', //optional
+        //     'items' => array(
+        //         'submenu_1.html' => 'Submenu 1',
+        //         'submenu_2.html' => 'Submenu 2',
+        //         'submenu_3.html' => 'Submenu 3',
+        //     )
+        // ),
             ) as $link_href => $link_text) {
                 if (is_array($link_text) && isset($link_text['text'])) {
                     $is_active = false;
