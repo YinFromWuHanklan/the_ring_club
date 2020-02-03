@@ -34,7 +34,6 @@
         // ),
         'kursplan.html' => 'Kursplan',
         'preise.html' => 'Preise',
-        'probetraining.html' => 'Probetraining',
         'personaltraining.html' => 'Personaltraining',
         // 'events.html' => 'Events',
         // 'blog.html' => 'Blog',

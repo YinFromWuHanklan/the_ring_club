@@ -86,10 +86,27 @@ include '../components/html_top.php';
     </div>
 </div>
 
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <h2 class="text-center">
+                Personaltraining
+            </h2>
+            <p>
+            Personaltraining kann von jedem Mitglied mit einem der ausgewählten Trainer des The Ring Clubs individuell vereinbart werden.<br /><br /> 
+            Für "Nichtmitglieder" oder fremde Personaltrainer wird eine Gebühr von 25.- € erhoben. Diese wird mit Anwesenheit des Trainers im The Ring Club fällig.<br /><br /> 
+            Eigene Vermarktung mit personalisierten T Shirts, Jacken, Hoodies oder ähnlichen Utensilien ist in unseren Räumlichkeiten untersagt.<br /><br />
+            Wir danken schon im Voraus für Ihr Verständnis.
+            </p>
+        </div>
+    </div>
+</div>
+
       
         <div class="text-center mt-5">
             <a href="opening.html" role="button" class="btn p-3">Probetraining buchen</a>
         </div>
+
 
         <!-- <h2 class="text-center">
             Kursbeschreibung
