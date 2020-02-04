@@ -43,7 +43,6 @@ var jsmin = require('gulp-jsmin');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var gutil = require('gulp-util');
-var imagemin = require('gulp-imagemin');
 var clean = require('gulp-clean');
 var minifyhtml = require('gulp-minify-html');
 //
@@ -52,10 +51,15 @@ var minifyCSS = require('gulp-minify-css');
 var less = require('gulp-less');
 var sourcemaps = require('gulp-sourcemaps');
 var base64 = require('gulp-base64');
-var imageminPngquant = require('imagemin-pngquant');
-var imageminZopfli = require('imagemin-zopfli');
-var imageminGiflossy = require('imagemin-giflossy');
-var imageminGuetzli = require('imagemin-guetzli');
+//ALT
+//var imagemin = require('gulp-imagemin');
+//var imageminPngquant = require('imagemin-pngquant');
+//var imageminZopfli = require('imagemin-zopfli');
+//var imageminGiflossy = require('imagemin-giflossy');
+//var imageminGuetzli = require('imagemin-guetzli');
+//NEU
+var imagemin = require('gulp-imagemin');
+//
 gulp.task('default', ['clean'], function () {
     gulp.start('default2');
 });
@@ -67,37 +71,11 @@ gulp.task('default2', ['images'], function () {
 
 //Gulp Tasks
 gulp.task('images', function () {
-    var png_1 = imageminPngquant({
-        speed: 1,
-        quality: 94
-    });
-    var png_2 = imageminPngquant({
-        speed: 1,
-        quality: 94
-    });
-    var png_3 = imageminZopfli({
-        more: true
-    });
-    var gif = imageminGiflossy({
-        optimizationLevel: 3,
-        optimize: 3,
-        lossy: 2
-    });
-    var svg = imagemin.svgo({
-        plugins: [{
-                removeViewBox: false
-            }]
-    });
-    var jpg_1 = imagemin.jpegtran({
-        progressive: true
-    });
-    var jpg_2 = imageminGuetzli();
     return gulp.src('./images/**/*')
             .pipe(imagemin([
-                png_1, png_2, png_3,
-                gif,
-                svg,
-                jpg_1, jpg_2
+                imagemin.gifsicle({interlaced: true}),
+                imagemin.mozjpeg({quality: 91, progressive: true}),
+                imagemin.optipng({optimizationLevel: 5})
             ])).pipe(gulp.dest('./assets/images/'));
 });
 gulp.task('less', function () {
