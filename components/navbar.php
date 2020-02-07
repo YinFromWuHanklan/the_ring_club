@@ -41,6 +41,9 @@
             <li class="nav-item <?= nav_css_class('preise.html') ?>">
                 <a class="nav-link" href="preise.html">Preise</a>
             </li>
+            <li class="nav-item <?= nav_css_class('probetraining.html') ?>">
+                <a class="nav-link" href="probetraining.html">Probetraining</a>
+            </li>
             <li class="nav-item <?= nav_css_class('personaltraining.html') ?>">
                 <a class="nav-link" href="personaltraining.html">Personaltraining</a>
             </li>
