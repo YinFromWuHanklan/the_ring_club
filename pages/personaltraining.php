@@ -14,7 +14,7 @@ include '../components/html_top.php';
         <p>
             Personaltraining kann von jedem Mitglied mit einem der ausgewählten Trainer des The Ring Clubs individuell vereinbart werden.<br /><br /> 
             Für "Nichtmitglieder" oder fremde Personaltrainer wird eine Gebühr von 25.- € erhoben. Diese wird mit Anwesenheit des Trainers im The Ring Club fällig.<br /><br /> 
-            Eigene Vermarktung mit personalisierten T Shirts, Jacken, Hoodies oder ähnlichen Utensilien ist in unseren Räumlichkeiten untersagt.<br /><br />
+            Eigene Vermarktung mit personalisierten T-Shirts, Jacken, Hoodies oder ähnlichen Utensilien ist in unseren Räumlichkeiten untersagt.<br /><br />
             Wir danken schon im Voraus für Ihr Verständnis.
         </p>
     </div>
