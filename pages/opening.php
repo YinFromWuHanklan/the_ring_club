@@ -76,16 +76,16 @@ include '../components/html_top.php';
                     <option value="bodo18">Boxen Donnerstag 18:30-20:00 Uhr</option>
                     <option value="bodo20">Boxen Donnerstag 20:00-21:30 Uhr</option>
                     <option value="bofr17">Boxen Freitag 17:00-18:30 Uhr</option>
-                    <option value="atmo18">Athletic Montag 18:00-19:00 Uhr</option>
-                    <option value="atmo19">Athletic Montag 19:15-20:30 Uhr</option>
-                    <option value="atdi18">Athletic Dienstag 18:00-19:00 Uhr</option>
-                    <option value="atdi19">Athletic Dienstag 19:15-20:30 Uhr</option>
-                    <option value="atmi18">Athletic Mittwoch 18:00-19:00 Uhr</option>
-                    <option value="atmi19">Athletic Mittwoch 19:15-20:30 Uhr</option>
-                    <option value="atdo18">Athletic Donnerstag 18:00-19:00 Uhr</option>
-                    <option value="atdo19">Athletic Donnerstag 19:15-20:30 Uhr</option>
-                    <option value="atfr17">Athletic Freitag 17:00-18:00 Uhr</option>
-                    <option value="atfr18">Athletic Freitag 18:15-19:30 Uhr</option>
+                    <option value="atmo18">Fitness Montag 18:00-19:00 Uhr</option>
+                    <option value="atmo19">Fitness Montag 19:15-20:30 Uhr</option>
+                    <option value="atdi18">Fitness Dienstag 18:00-19:00 Uhr</option>
+                    <option value="atdi19">Fitness Dienstag 19:15-20:30 Uhr</option>
+                    <option value="atmi18">Fitness Mittwoch 18:00-19:00 Uhr</option>
+                    <option value="atmi19">Fitness Mittwoch 19:15-20:30 Uhr</option>
+                    <option value="atdo18">Fitness Donnerstag 18:00-19:00 Uhr</option>
+                    <option value="atdo19">Fitness Donnerstag 19:15-20:30 Uhr</option>
+                    <option value="atfr17">Fitness Freitag 17:00-18:00 Uhr</option>
+                    <option value="atfr18">Fitness Freitag 18:15-19:30 Uhr</option>
                 </select>
             </div>
             <div class="text-center mt-4">

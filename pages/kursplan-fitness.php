@@ -53,7 +53,7 @@ include '../components/html_top.php';
         </div>
 
         <h2 class="text-center">
-            Athletic
+            Fitness
         </h2>
 
 <div class="container mt-4">

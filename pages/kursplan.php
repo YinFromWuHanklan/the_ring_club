@@ -45,7 +45,7 @@ include '../components/html_top.php';
             <a href="opening.html" role="button" class="btn p-3">Probetraining buchen</a>
         </div>
 
-        <h2 class="text-center">Athletic</h2>
+        <h2 class="text-center">Fitness</h2>
 
         <div class="container mt-4">
             <div class="row justify-content-center">
